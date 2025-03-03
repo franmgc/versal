@@ -1,0 +1,3 @@
+relativeroot=/home/fran/Documentos/progra/sys_fir/lab/fir_2
+original_argv=--mode hls --package --config /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_2.cfg --work_dir fir_hls 
+

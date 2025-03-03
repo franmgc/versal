@@ -1,0 +1,50 @@
+{
+    "1": {
+        "name": "fir_hls_Pipeline_VITIS_LOOP_12_1",
+        "file": "\/home\/fran\/Documentos\/progra\/sys_fir\/fuentes\/HLS\/fir_2.cpp",
+        "fileloc": "10",
+        "instructions": "74",
+        "total_instructions": "74",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "8"
+        },
+        "stores": {
+            "L": "16"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "2": {
+        "name": "fir_hls_Pipeline_1",
+        "file": "\/home\/fran\/Documentos\/progra\/sys_fir\/fuentes\/HLS\/fir_2.cpp",
+        "fileloc": "10",
+        "instructions": "56",
+        "total_instructions": "56",
+        "calls": "",
+        "basicblocks": "12",
+        "loads": {
+            "L": "8"
+        },
+        "stores": {
+            "L": "9"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "0": {
+        "name": "fir_hls",
+        "file": "fir_2.cpp",
+        "fileloc": "6",
+        "instructions": "25",
+        "total_instructions": "155",
+        "calls": "2 1",
+        "basicblocks": "1",
+        "loads": {
+            "L": "7"
+        }
+    }
+}

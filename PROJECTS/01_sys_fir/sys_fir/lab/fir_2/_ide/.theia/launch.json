@@ -1,0 +1,14 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "fir_2",
+      "type": "gdb",
+      "request": "launch",
+      "target": "${workspaceFolder}/fir_2/fir_hls/hls/csim/build/csim.exe",
+      "cwd": "${workspaceFolder}/fir_2/fir_hls/hls/csim/build",
+      "gdbpath": "${env:XILINX_HLS}/tps/lnx64/gdb-9.2/bin/gdb",
+      "valuesFormatting": "prettyPrinters"
+    }
+  ]
+}

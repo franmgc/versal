@@ -1,0 +1,118 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "fir_sys_sw_emu_new",
+      "debugType": "sw_emu",
+      "type": "gdb",
+      "request": "launch",
+      "target": "${workspaceFolder}/fir_sw/build/x86sim/fir_sw",
+      "applicationProjectDir": "${workspaceFolder}/fir_sys",
+      "arguments": "${workspaceFolder}/fir_sys/build/sw_emu/package/binary_container_1.xclbin",
+      "cwd": "${workspaceFolder}/fir_sys/build/sw_emu/fir_sys_sw_emu_new",
+      "gdbpath": "${env:XILINX_VITIS}/bin/xgdb",
+      "valuesFormatting": "prettyPrinters",
+      "env": {
+        "XCL_EMULATION_MODE": "sw_emu",
+        "ENABLE_KERNEL_DEBUG": "true",
+        "LD_LIBRARY_PATH": "${env:XILINX_XRT}/lib",
+        "XILINX_VITIS": "${env:XILINX_VITIS}",
+        "XCL_BIN_PATH": "${workspaceFolder}/fir_sys/build/sw_emu/package",
+        "XILINX_HLS": "${env:XILINX_VITIS}"
+      }
+    },
+    {
+      "type": "tcf-debug",
+      "request": "launch",
+      "name": "fir_sys_hw_emu_new",
+      "debugType": "tcf_hw_emu",
+      "target": {
+        "targetConnectionId": "LinuxEmulation",
+        "peersIniPath": "../../../.peers.ini",
+        "file": "${workspaceFolder}/fir_sw/build/hw/fir_sw",
+        "remoteFilePath": "/run/media/mmcblk0p1/fir_sw"
+      },
+      "env": {
+        "XILINX_VITIS": "/run/media/mmcblk0p1",
+        "XILINX_XRT": "/usr",
+        "XCL_EMULATION_MODE": "hw_emu",
+        "XRT_INI_PATH": "/run/media/mmcblk0p1/hw_emu_xrt.ini",
+        "LD_LIBRARY_PATH": "/run/media/mmcblk0p1:/tmp:$LD_LIBRARY_PATH"
+      },
+      "copyToTarget": [
+        {
+          "source": "${workspaceFolder}/fir_sys/fir_sys_host/runtime/hw_emu_xrt.ini",
+          "destination": "/run/media/mmcblk0p1"
+        },
+        {
+          "source": "${workspaceFolder}/fir_sys/build/hw_emu/package/binary_container_1.xclbin",
+          "destination": "/run/media/mmcblk0p1"
+        }
+      ],
+      "copyFromTargetOnTermination": [
+        {
+          "pattern": ".txt",
+          "destination": "${workspaceFolder}/fir_sys/build/hw_emu/fir_sys_hw_emu_new"
+        },
+        {
+          "pattern": ".run_summary",
+          "destination": "${workspaceFolder}/fir_sys/build/hw_emu/fir_sys_hw_emu_new"
+        },
+        {
+          "pattern": ".json",
+          "destination": "${workspaceFolder}/fir_sys/build/hw_emu/fir_sys_hw_emu_new"
+        },
+        {
+          "pattern": ".csv",
+          "destination": "${workspaceFolder}/fir_sys/build/hw_emu/fir_sys_hw_emu_new"
+        }
+      ],
+      "pathMap": [
+        {
+          "source": "/home/fran/Documentos/progra/sys_fir/lab/fir_sys/build/hw_emu/hw_link/binary_container_1/binary_container_1/int/xo/fir_hls/fir_hls/cpu_sources",
+          "destination": "/home/fran/Documentos/progra/sys_fir/fuentes/HLS"
+        },
+        {
+          "source": "/home/fran/Documentos/progra/sys_fir/lab/fir_sys/build/hw_emu/hw_link/binary_container_1/binary_container_1/int/xo/mm2s/mm2s/cpu_sources",
+          "destination": "/home/fran/Documentos/progra/sys_fir/fuentes/HLS"
+        },
+        {
+          "source": "/home/fran/Documentos/progra/sys_fir/lab/fir_sys/build/hw_emu/hw_link/binary_container_1/binary_container_1/int/xo/s2mm/s2mm/cpu_sources",
+          "destination": "/home/fran/Documentos/progra/sys_fir/fuentes/HLS"
+        }
+      ],
+      "replaceNativeEnv": false,
+      "arguments": "./binary_container_1.xclbin",
+      "workingDirectory": "/run/media/mmcblk0p1",
+      "stopAtMain": true,
+      "stopAtProgramEntry": false,
+      "autoAttachProcessChildren": false,
+      "internalConsoleOptions": "openOnSessionStart"
+    },
+    {
+      "type": "tcf-debug",
+      "request": "launch",
+      "name": "fir_sys_aie_hw_emu_1",
+      "debugType": "aiesimulatorInApplicationForHwEmu",
+      "target": {
+        "targetConnectionId": "XRTServer",
+        "peersIniPath": "../../../.peers.ini",
+        "context": "MemSock"
+      },
+      "replaceNativeEnv": false,
+      "stopAtMain": true,
+      "stopAtProgramEntry": false,
+      "autoAttachProcessChildren": false,
+      "internalConsoleOptions": "openOnSessionStart"
+    }
+  ],
+  "compounds": [
+    {
+      "name": "fir_sys_system_1",
+      "configurations": [
+        "fir_sys_hw_emu_new",
+        "fir_sys_aie_hw_emu_1"
+      ]
+    }
+  ]
+}

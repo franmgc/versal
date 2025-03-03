@@ -1,0 +1,31 @@
+---
+MainSourceFile:  /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_2.pp.0.cpp
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_12_1:  '
+    FileOffset:      12
+    FilePath:        /home/fran/Documentos/progra/sys_fir/fuentes/HLS/fir_2.cpp
+    Replacements:    
+      - FilePath:        /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_2.pp.0.cpp
+        Offset:          834654
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_12_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_15_2:  '
+    FileOffset:      15
+    FilePath:        /home/fran/Documentos/progra/sys_fir/fuentes/HLS/fir_2.cpp
+    Replacements:    
+      - FilePath:        /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_2.pp.0.cpp
+        Offset:          834700
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_15_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_22_3:  '
+    FileOffset:      22
+    FilePath:        /home/fran/Documentos/progra/sys_fir/fuentes/HLS/fir_2.cpp
+    Replacements:    
+      - FilePath:        /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_2.pp.0.cpp
+        Offset:          834865
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_22_3: '
+...

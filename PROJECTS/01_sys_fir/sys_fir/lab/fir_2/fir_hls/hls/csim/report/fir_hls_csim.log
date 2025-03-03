@@ -1,0 +1,72 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../fir_hls_TB.cpp in debug mode
+   Compiling ../../../../../../fuentes/HLS/fir_2.cpp in debug mode
+   Generating csim.exe
+Output[0] = 1024
+Output[1] = 512
+Output[2] = 256
+Output[3] = 128
+Output[4] = 64
+Output[5] = 32
+Output[6] = 16
+Output[7] = 8
+Output[8] = 0
+Output[9] = 0
+Output[10] = 0
+Output[11] = 0
+Output[12] = 0
+Output[13] = 0
+Output[14] = 0
+Output[15] = 0
+Output[16] = 0
+Output[17] = 0
+Output[18] = 0
+Output[19] = 0
+Output[20] = 0
+Output[21] = 0
+Output[22] = 0
+Output[23] = 0
+Output[24] = 0
+Output[25] = 0
+Output[26] = 0
+Output[27] = 0
+Output[28] = 0
+Output[29] = 0
+Output[30] = 0
+Output[31] = 0
+Output[32] = 0
+Output[33] = 0
+Output[34] = 0
+Output[35] = 0
+Output[36] = 0
+Output[37] = 0
+Output[38] = 0
+Output[39] = 0
+Output[40] = 0
+Output[41] = 0
+Output[42] = 0
+Output[43] = 0
+Output[44] = 0
+Output[45] = 0
+Output[46] = 0
+Output[47] = 0
+Output[48] = 0
+Output[49] = 0
+Output[50] = 0
+Output[51] = 0
+Output[52] = 0
+Output[53] = 0
+Output[54] = 0
+Output[55] = 0
+Output[56] = 0
+Output[57] = 0
+Output[58] = 0
+Output[59] = 0
+Output[60] = 0
+Output[61] = 0
+Output[62] = 0
+Output[63] = 0
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 64
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

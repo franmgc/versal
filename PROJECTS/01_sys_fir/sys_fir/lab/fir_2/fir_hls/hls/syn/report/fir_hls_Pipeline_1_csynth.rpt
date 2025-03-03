@@ -1,0 +1,146 @@
+
+
+================================================================
+== Vitis HLS Report for 'fir_hls_Pipeline_1'
+================================================================
+* Date:           Mon Mar  3 19:17:16 2025
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        fir_hls
+* Solution:       hls (Vitis Kernel Flow Target)
+* Product family: versalaicore
+* Target device:  xcvc1902-vsva2197-2MP-e-S
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  8.00 ns|  1.318 ns|     0.96 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |       10|       10|  80.000 ns|  80.000 ns|   10|   10|       no|
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+        |          |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name|   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+        |- Loop 1  |        8|        8|         1|          1|          1|     8|       yes|
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+------+---------+--------+-----+
+|       Name      | BRAM_18K|  DSP |    FF   |   LUT  | URAM|
++-----------------+---------+------+---------+--------+-----+
+|DSP              |        -|     -|        -|       -|    -|
+|Expression       |        -|     -|        0|      10|    -|
+|FIFO             |        -|     -|        -|       -|    -|
+|Instance         |        -|     -|        -|       -|    -|
+|Memory           |        -|     -|        -|       -|    -|
+|Multiplexer      |        -|     -|        -|      10|    -|
+|Register         |        -|     -|        6|       -|    -|
++-----------------+---------+------+---------+--------+-----+
+|Total            |        0|     0|        6|      20|    0|
++-----------------+---------+------+---------+--------+-----+
+|Available        |     1934|  1968|  1799680|  899840|  463|
++-----------------+---------+------+---------+--------+-----+
+|Utilization (%)  |        0|     0|       ~0|      ~0|    0|
++-----------------+---------+------+---------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------+----------+----+---+----+------------+------------+
+    |     Variable Name    | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------+----------+----+---+----+------------+------------+
+    |empty_10_fu_195_p2    |         +|   0|  0|   5|           4|           1|
+    |exitcond82_fu_236_p2  |      icmp|   0|  0|   5|           4|           5|
+    +----------------------+----------+----+---+----+------------+------------+
+    |Total                 |          |   0|  0|  10|           8|           6|
+    +----------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------+----+-----------+-----+-----------+
+    |           Name          | LUT| Input Size| Bits| Total Bits|
+    +-------------------------+----+-----------+-----+-----------+
+    |ap_done_int              |   2|          2|    1|          2|
+    |ap_sig_allocacmp_p_load  |   4|          2|    4|          8|
+    |empty_fu_50              |   4|          2|    4|          8|
+    +-------------------------+----+-----------+-----+-----------+
+    |Total                    |  10|          6|    9|         18|
+    +-------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------+---+----+-----+-----------+
+    |     Name    | FF| LUT| Bits| Const Bits|
+    +-------------+---+----+-----+-----------+
+    |ap_CS_fsm    |  1|   0|    1|          0|
+    |ap_done_reg  |  1|   0|    1|          0|
+    |empty_fu_50  |  4|   0|    4|          0|
+    +-------------+---+----+-----+-----------+
+    |Total        |  6|   0|    6|          0|
+    +-------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------------+-----+-----+------------+--------------------+--------------+
+|        RTL Ports       | Dir | Bits|  Protocol  |    Source Object   |    C Type    |
++------------------------+-----+-----+------------+--------------------+--------------+
+|ap_clk                  |   in|    1|  ap_ctrl_hs|  fir_hls_Pipeline_1|  return value|
+|ap_rst                  |   in|    1|  ap_ctrl_hs|  fir_hls_Pipeline_1|  return value|
+|ap_start                |   in|    1|  ap_ctrl_hs|  fir_hls_Pipeline_1|  return value|
+|ap_done                 |  out|    1|  ap_ctrl_hs|  fir_hls_Pipeline_1|  return value|
+|ap_idle                 |  out|    1|  ap_ctrl_hs|  fir_hls_Pipeline_1|  return value|
+|ap_ready                |  out|    1|  ap_ctrl_hs|  fir_hls_Pipeline_1|  return value|
+|shift_reg_6_out         |  out|   29|      ap_vld|     shift_reg_6_out|       pointer|
+|shift_reg_6_out_ap_vld  |  out|    1|      ap_vld|     shift_reg_6_out|       pointer|
+|shift_reg_5_out         |  out|   29|      ap_vld|     shift_reg_5_out|       pointer|
+|shift_reg_5_out_ap_vld  |  out|    1|      ap_vld|     shift_reg_5_out|       pointer|
+|shift_reg_4_out         |  out|   29|      ap_vld|     shift_reg_4_out|       pointer|
+|shift_reg_4_out_ap_vld  |  out|    1|      ap_vld|     shift_reg_4_out|       pointer|
+|shift_reg_3_out         |  out|   29|      ap_vld|     shift_reg_3_out|       pointer|
+|shift_reg_3_out_ap_vld  |  out|    1|      ap_vld|     shift_reg_3_out|       pointer|
+|shift_reg_2_out         |  out|   29|      ap_vld|     shift_reg_2_out|       pointer|
+|shift_reg_2_out_ap_vld  |  out|    1|      ap_vld|     shift_reg_2_out|       pointer|
+|shift_reg_1_out         |  out|   29|      ap_vld|     shift_reg_1_out|       pointer|
+|shift_reg_1_out_ap_vld  |  out|    1|      ap_vld|     shift_reg_1_out|       pointer|
+|shift_reg_out           |  out|   29|      ap_vld|       shift_reg_out|       pointer|
+|shift_reg_out_ap_vld    |  out|    1|      ap_vld|       shift_reg_out|       pointer|
++------------------------+-----+-----+------------+--------------------+--------------+
+

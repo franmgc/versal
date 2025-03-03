@@ -1,0 +1,89 @@
+{
+  "modelVersion": "1.0",
+  "projectName": "fir_sys",
+  "platform": "/tools/Xilinx/Vitis/2023.2/base_platforms/xilinx_vck190_base_202320_1/xilinx_vck190_base_202320_1.xpfm",
+  "externalComponentRefs": [
+    "fir_2",
+    "mm2s",
+    "s2mm",
+    "fir_1",
+    "fir_sw"
+  ],
+  "components": [
+    {
+      "name": "package",
+      "type": "PACKAGE",
+      "configuration": {
+        "componentType": "PACKAGE",
+        "packageConfigurations": [
+          {
+            "configId": "package.default",
+            "options": []
+          }
+        ],
+        "configFiles": [
+          "package/package.cfg"
+        ]
+      },
+      "previousBuildStatusMap": {}
+    },
+    {
+      "name": "hw_link",
+      "type": "HW_LINKER",
+      "configuration": {
+        "componentType": "HW_LINKER",
+        "containers": [
+          {
+            "name": "binary_container_1",
+            "kernels": {
+              "fir_hls": "fir_2",
+              "mm2s": "mm2s",
+              "s2mm": "s2mm"
+            },
+            "userXoKernels": {},
+            "aieComponents": [
+              "fir_1"
+            ],
+            "userAieLibadfList": [],
+            "cfgFiles": [
+              "hw_link/binary_container_1-link.cfg"
+            ]
+          }
+        ],
+        "vppLinkerConfigurations": [
+          {
+            "configId": "hw_link.default",
+            "options": [],
+            "containerOptions": {},
+            "buildDatafiles": []
+          }
+        ]
+      },
+      "previousBuildStatusMap": {}
+    }
+  ],
+  "buildConfigurations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "supportedTargets": [
+        "SW_EMU",
+        "HW_EMU",
+        "HW"
+      ],
+      "componentConfigMap": {
+        "package": "package.default",
+        "hw_link": "hw_link.default"
+      }
+    }
+  ],
+  "activeBuildConfigId": "default",
+  "hostMode": "x86",
+  "previousBuildStatusMap": {
+    "sw_emu": "SUCCESS",
+    "hw_emu": "SUCCESS",
+    "hw": "NEW"
+  },
+  "isDirty": true,
+  "applicationFlow": "EMBEDDED_ACCEL"
+}

@@ -1,0 +1,170 @@
+<ENTRY>
+{
+ "thisFile": "/home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/sw_emu/fir_hls.xo.compile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Mon Mar  3 19:05:15 2025",
+ "timestampMillis": "1741025115800",
+ "buildStep": {
+  "cmdId": "38195781-a7c7-40b2-8700-252dfab09e1e",
+  "name": "v++",
+  "logFile": "/home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/sw_emu/fir_hls/fir_hls.steps.log",
+  "commandLine": "/tools/Xilinx/Vitis/2023.2/bin/unwrapped/lnx64.o/v++  --vivado.prop \"run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" -c -k fir_hls --target sw_emu -g /home/fran/Documentos/progra/sys_fir/fuentes/HLS/fir_2.h /home/fran/Documentos/progra/sys_fir/fuentes/HLS/fir_2.cpp --platform /tools/Xilinx/Vitis/2023.2/base_platforms/xilinx_vck190_base_202320_1/xilinx_vck190_base_202320_1.xpfm --temp_dir /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/sw_emu -o /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/sw_emu/fir_hls.xo ",
+  "args": [
+   "-c",
+   "-k",
+   "fir_hls",
+   "--target",
+   "sw_emu",
+   "-g",
+   "/home/fran/Documentos/progra/sys_fir/fuentes/HLS/fir_2.h",
+   "/home/fran/Documentos/progra/sys_fir/fuentes/HLS/fir_2.cpp",
+   "--platform",
+   "/tools/Xilinx/Vitis/2023.2/base_platforms/xilinx_vck190_base_202320_1/xilinx_vck190_base_202320_1.xpfm",
+   "--temp_dir",
+   "/home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/sw_emu",
+   "-o",
+   "/home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/sw_emu/fir_hls.xo"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/fran/Documentos/progra/sys_fir/lab/fir_2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Mar  3 19:05:15 2025",
+ "timestampMillis": "1741025115800",
+ "status": {
+  "cmdId": "38195781-a7c7-40b2-8700-252dfab09e1e",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Mon Mar  3 19:05:17 2025",
+ "timestampMillis": "1741025117351",
+ "buildSummary": {
+  "hardwarePlatform": "xilinx_vck190_base_202320_1.xpfm",
+  "hardwareDsa": "hw.xsa",
+  "platformDirectory": "/tools/Xilinx/Vitis/2023.2/base_platforms/xilinx_vck190_base_202320_1",
+  "runtime": "OpenCL",
+  "systemConfig": "Linux",
+  "flow": "BF_COMPILE",
+  "target": "TT_SW_EMU",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "fir_hls",
+     "file": "/home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/sw_emu/fir_hls.xo",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/fran/Documentos/progra/sys_fir/fuentes/HLS/fir_2.h",
+     "/home/fran/Documentos/progra/sys_fir/fuentes/HLS/fir_2.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "Vitis V++ Compiler Release 2023.2. SW Build 4026344 on 2023-10-11-15:42:10"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Mar  3 19:05:17 2025",
+ "timestampMillis": "1741025117354",
+ "buildStep": {
+  "cmdId": "5922cce8-bb99-43ba-93e9-e338ab029869",
+  "name": "vitis_hls",
+  "logFile": "/home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/sw_emu/fir_hls/fir_hls/vitis_hls.log",
+  "commandLine": "vitis_hls -f /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/sw_emu/fir_hls/fir_hls/fir_hls.tcl -messageDb vitis_hls.pb",
+  "args": [
+   "vitis_hls",
+   "-f",
+   "/home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/sw_emu/fir_hls/fir_hls/fir_hls.tcl",
+   "-messageDb",
+   "vitis_hls.pb"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/fran/Documentos/progra/sys_fir/lab/fir_2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Mar  3 19:05:17 2025",
+ "timestampMillis": "1741025117355",
+ "status": {
+  "cmdId": "5922cce8-bb99-43ba-93e9-e338ab029869",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Mar  3 19:05:28 2025",
+ "timestampMillis": "1741025128042",
+ "status": {
+  "cmdId": "5922cce8-bb99-43ba-93e9-e338ab029869",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Mar  3 19:05:28 2025",
+ "timestampMillis": "1741025128063",
+ "status": {
+  "cmdId": "38195781-a7c7-40b2-8700-252dfab09e1e",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar  3 19:05:28 2025",
+ "timestampMillis": "1741025128119",
+ "report": {
+  "path": "/home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/sw_emu/reports/fir_hls/v++_compile_fir_hls_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar  3 19:05:28 2025",
+ "timestampMillis": "1741025128120",
+ "report": {
+  "path": "/home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/sw_emu/v++_compile_fir_hls_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

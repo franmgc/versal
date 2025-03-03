@@ -1,0 +1,811 @@
+INFO-FLOW: Workspace /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls opened at Mon Mar 03 19:17:07 CET 2025
+Execute     send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Execute   apply_ini /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_2.cfg 
+INFO: [HLS 200-1510] Running: apply_ini /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_2.cfg 
+Execute     send_msg_by_id INFO @200-1909@%s /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_2.cfg 
+INFO: [HLS 200-1909] Reading HLS ini file /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_2.cfg
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=/home/fran/Documentos/progra/sys_fir/fuentes/HLS/fir_2.cpp' at /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_2.cfg(7) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=/home/fran/Documentos/progra/sys_fir/fuentes/HLS/fir_2.cpp' at /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_2.cfg(7)
+Execute     add_files /home/fran/Documentos/progra/sys_fir/fuentes/HLS/fir_2.cpp 
+INFO: [HLS 200-10] Adding design file '/home/fran/Documentos/progra/sys_fir/fuentes/HLS/fir_2.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=/home/fran/Documentos/progra/sys_fir/fuentes/HLS/fir_2.h' at /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_2.cfg(8) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=/home/fran/Documentos/progra/sys_fir/fuentes/HLS/fir_2.h' at /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_2.cfg(8)
+Execute     add_files /home/fran/Documentos/progra/sys_fir/fuentes/HLS/fir_2.h 
+INFO: [HLS 200-10] Adding design file '/home/fran/Documentos/progra/sys_fir/fuentes/HLS/fir_2.h' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=fir_hls_TB.cpp' at /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_2.cfg(12) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=fir_hls_TB.cpp' at /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_2.cfg(12)
+Execute     add_files -tb /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls_TB.cpp 
+INFO: [HLS 200-10] Adding test bench file '/home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls_TB.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.top=fir_hls' at /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_2.cfg(9) 
+INFO: [HLS 200-1465] Applying ini 'syn.top=fir_hls' at /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_2.cfg(9)
+Execute     set_top fir_hls 
+Execute     send_msg_by_id INFO @200-1465@%s 'flow_target=vitis' at /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_2.cfg(4) 
+INFO: [HLS 200-1465] Applying ini 'flow_target=vitis' at /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_2.cfg(4)
+Execute     send_msg_by_id INFO @200-1505@%s%s  vitis 
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+Execute     send_msg_by_id INFO @200-435@%s%s 'open_solution -flow_target vitis' config_interface -m_axi_latency=64 
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_latency=64
+Execute     config_interface -m_axi_latency=64 
+Execute     send_msg_by_id INFO @200-435@%s%s 'open_solution -flow_target vitis' config_interface -m_axi_alignment_byte_size=64 
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_alignment_byte_size=64
+Execute     config_interface -m_axi_alignment_byte_size=64 
+Execute     send_msg_by_id INFO @200-435@%s%s 'open_solution -flow_target vitis' config_interface -m_axi_max_widen_bitwidth=512 
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_max_widen_bitwidth=512
+Execute     config_interface -m_axi_max_widen_bitwidth=512 
+INFO-FLOW: Setting macro_cmd open_solution -flow_target vitis configuration: config_interface -default_interface=kernel
+Execute     config_interface -default_interface=kernel 
+Execute     send_msg_by_id INFO @200-435@%s%s 'open_solution -flow_target vitis' config_rtl -register_reset_num=3 
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_rtl -register_reset_num=3
+Execute     config_rtl -register_reset_num=3 
+Execute     send_msg_by_id INFO @200-1465@%s 'part=xcvc1902-vsva2197-2MP-e-S' at /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_2.cfg(1) 
+INFO: [HLS 200-1465] Applying ini 'part=xcvc1902-vsva2197-2MP-e-S' at /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_2.cfg(1)
+Execute     set_part xcvc1902-vsva2197-2MP-e-S 
+Execute       create_platform xcvc1902-vsva2197-2MP-e-S -board  
+DBG:HLSDevice: Trying to load device library: /tools/Xilinx/Vitis_HLS/2023.2/lib/lnx64.o/libxv_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /tools/Xilinx/Vivado/2023.2/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xcvc1902-vsva2197-2MP-e-S'
+Command       create_platform done; 0.72 sec.
+Execute       source /tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info 
+Execute       config_compile -quiet -complex-mul-dsp=1 
+Command     set_part done; 0.82 sec.
+Execute     send_msg_by_id INFO @200-1465@%s 'clock=8ns' at /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_2.cfg(10) 
+INFO: [HLS 200-1465] Applying ini 'clock=8ns' at /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_2.cfg(10)
+Execute     create_clock -period 8ns 
+Execute       ap_set_clock -name default -period 8 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 8ns.
+Execute     send_msg_by_id INFO @200-1465@%s 'clock_uncertainty=12%' at /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_2.cfg(11) 
+INFO: [HLS 200-1465] Applying ini 'clock_uncertainty=12%' at /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_2.cfg(11)
+Execute     set_clock_uncertainty 12% 
+Execute       ap_set_clock -name default -uncertainty 0.96 -unit % 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.96ns.
+Execute     send_msg_by_id INFO @200-1465@%s 'package.output.format=xo' at /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_2.cfg(5) 
+INFO: [HLS 200-1465] Applying ini 'package.output.format=xo' at /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_2.cfg(5)
+Execute     config_export -format=xo 
+Command   apply_ini done; 0.83 sec.
+Execute   apply_ini /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/config.cmdline 
+INFO: [HLS 200-1510] Running: apply_ini /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/config.cmdline 
+Execute     send_msg_by_id INFO @200-1909@%s /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/config.cmdline 
+INFO: [HLS 200-1909] Reading HLS ini file /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/config.cmdline
+Execute   csynth_design 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO-FLOW: Running SLX 'csynth' proc: ::SLX::run_csynth
+Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 290.262 MB.
+Execute       set_directive_top fir_hls -name=fir_hls 
+Execute       source /tools/Xilinx/Vitis_HLS/2023.2/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute       source /tools/Xilinx/Vitis_HLS/2023.2/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+INFO: [HLS 200-10] Analyzing design file '/home/fran/Documentos/progra/sys_fir/fuentes/HLS/fir_2.cpp' ... 
+INFO-FLOW: Compiling one TU...
+INFO-FLOW: Handling /home/fran/Documentos/progra/sys_fir/fuentes/HLS/fir_2.cpp as C++
+Execute       ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info 
+INFO-FLOW: Running: GCC PP 39
+INFO-FLOW: Source preprocessing
+INFO-FLOW: run_clang exec: /tools/Xilinx/Vitis_HLS/2023.2/lnx64/tools/clang-3.9-csynth/bin/clang /home/fran/Documentos/progra/sys_fir/fuentes/HLS/fir_2.cpp -foptimization-record-file=/home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_2.cpp.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -gcc-toolchain /tools/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0 -fhls -fno-exceptions -insert-hls-directive=/home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/all.directive.json -E -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -Wno-error=dump-hls-pragmas -hls-clock-period=8 -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -fno-threadsafe-statics -fno-use-cxa-atexit -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot -I /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP58_PRIMARY__ -I /usr/include/x86_64-linux-gnu -o /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_2.pp.0.cpp -hls-platform-db-name=/tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/platform.db -hls-platform-name=versal_medium -device-resource-info=BRAM_1934.000000_DSP_1968.000000_FF_1799680.000000_LUT_899840.000000_SLICE_112480.000000_URAM_463.000000 -device-name-info=xcvc1902-vsva2197-2MP-e-S > /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_2.cpp.clang.out.log 2> /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_2.cpp.clang.err.log
+INFO-FLOW: Done: GCC PP 39 time: 0.1 seconds per iteration
+INFO-FLOW: Source syntax check for synthesis
+INFO-FLOW: run_clang exec: /tools/Xilinx/Vitis_HLS/2023.2/lnx64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=/home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fsyntax-only -fhls -target fpga64-xilinx-linux-gnu /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_2.pp.0.cpp -hls-platform-db-name=/tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/platform.db -hls-platform-name=versal_medium -device-resource-info=BRAM_1934.000000_DSP_1968.000000_FF_1799680.000000_LUT_899840.000000_SLICE_112480.000000_URAM_463.000000 -device-name-info=xcvc1902-vsva2197-2MP-e-S > /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/clang.out.log 2> /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/clang.err.log
+Execute       clang_tidy xilinx-systemc-detector -desc systemc-detector /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_2.pp.0.cpp std=gnu++14 -target fpga  -directive=/home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec /tools/Xilinx/Vitis_HLS/2023.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=/home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/.systemc_flag -fix-errors /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_2.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command       clang_tidy done; 0.11 sec.
+INFO-FLOW: Running: clang-tidy CDT preprocess 39
+Execute       clang_tidy xilinx-directive2pragma -desc directive2pragma /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_2.pp.0.cpp std=gnu++14 -target fpga  -directive=/home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/all.directive.json 
+INFO-FLOW: exec /tools/Xilinx/Vitis_HLS/2023.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=/home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/all.directive.json -fix-errors /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_2.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command       clang_tidy done; 0.2 sec.
+INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 0.2 seconds per iteration
+INFO-FLOW: Calling xilinx-label-all-loops ... 
+INFO-FLOW: Calling xilinx-aggregate-on-hls-vector ... 
+Execute       clang_tidy -errorcheck -desc loop-label xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_2.pp.0.cpp std=gnu++14 -target fpga  
+INFO-FLOW: run_clang exec: /tools/Xilinx/Vitis_HLS/2023.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=/home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_2.pp.0.cpp.clang-tidy.loop-label.diag.yml -header-filter=.* --checks=-*,xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute -fix-errors /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_2.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 > /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_2.pp.0.cpp.clang-tidy.loop-label.out.log 2> /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_2.pp.0.cpp.clang-tidy.loop-label.err.log
+Execute         source /tools/Xilinx/Vitis_HLS/2023.2/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
+Command       clang_tidy done; 0.24 sec.
+INFO-FLOW: run_clang exec: /tools/Xilinx/Vitis_HLS/2023.2/lnx64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=/home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_2.pp.0.cpp.xilinx-dataflow-lawyer.diag.yml /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_2.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 -fstrict-dataflow > /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_2.pp.0.cpp.xilinx-dataflow-lawyer.out.log 2> /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_2.pp.0.cpp.xilinx-dataflow-lawyer.err.log
+Execute       ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info 
+INFO-FLOW: compiling source code to llvm bc
+INFO-FLOW: run_clang exec: /tools/Xilinx/Vitis_HLS/2023.2/lnx64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=/home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_2.pp.0.cpp.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -fhls -flto -fno-exceptions -Wno-error=c++11-narrowing -hls-emit-hint-scope /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_2.pp.0.cpp -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -Wno-error=dump-hls-pragmas -hls-clock-period=8 -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot -I /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP58_PRIMARY__ -g -o /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_2.bc -hls-platform-db-name=/tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/platform.db -hls-platform-name=versal_medium -device-resource-info=BRAM_1934.000000_DSP_1968.000000_FF_1799680.000000_LUT_899840.000000_SLICE_112480.000000_URAM_463.000000 -device-name-info=xcvc1902-vsva2197-2MP-e-S > /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_2.pp.0.cpp.clang.out.log 2> /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_2.pp.0.cpp.clang.err.log
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.89 seconds. CPU system time: 0.29 seconds. Elapsed time: 1.17 seconds; current allocated memory: 292.320 MB.
+INFO-FLOW: Linking Debug ...
+INFO-FLOW: Linking dut bc code.
+Execute       run_link_or_opt -out /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/a.g.ld.0.bc -args  "/home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_2.g.bc"  
+INFO-FLOW: run_clang exec: /tools/Xilinx/Vitis_HLS/2023.2/lnx64/tools/clang-3.9-csynth/bin/llvm-link /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_2.g.bc -o /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/a.g.ld.0.bc > /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/a.g.ld.0.bc.llvm-link.out.log 2> /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/a.g.ld.0.bc.llvm-link.err.log
+INFO-FLOW: 
+Execute       run_link_or_opt -opt -out /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/a.g.ld.1.lower.bc -args /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics 
+INFO-FLOW: run_clang exec: /tools/Xilinx/Vitis_HLS/2023.2/lnx64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=/home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/a.g.ld.1.lower.bc.opt.diag.yml /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics -o /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/a.g.ld.1.lower.bc > /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/a.g.ld.1.lower.bc.opt.out.log 2> /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/a.g.ld.1.lower.bc.opt.err.log
+INFO-FLOW: 
+INFO-FLOW: Running: gen_design_size_report post-opt
+INFO-FLOW: Done: gen_design_size_report post-opt time: 0 seconds per iteration
+INFO-FLOW: Linking math bc lib
+Execute       run_link_or_opt -out /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/a.g.ld.2.m1.bc -args /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/a.g.ld.1.lower.bc -only-needed /tools/Xilinx/Vitis_HLS/2023.2/lnx64/lib/libhlsm_39.bc /tools/Xilinx/Vitis_HLS/2023.2/lnx64/lib/libhlsmc++_39.bc 
+INFO-FLOW: run_clang exec: /tools/Xilinx/Vitis_HLS/2023.2/lnx64/tools/clang-3.9-csynth/bin/llvm-link /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/a.g.ld.1.lower.bc -only-needed /tools/Xilinx/Vitis_HLS/2023.2/lnx64/lib/libhlsm_39.bc /tools/Xilinx/Vitis_HLS/2023.2/lnx64/lib/libhlsmc++_39.bc -o /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/a.g.ld.2.m1.bc > /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.out.log 2> /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.err.log
+INFO-FLOW: 
+Command       run_link_or_opt done; 1.03 sec.
+Execute       run_link_or_opt -opt -out /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/a.g.ld.3.fpc.bc -args /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=fir_hls -reflow-float-conversion 
+INFO-FLOW: run_clang exec: /tools/Xilinx/Vitis_HLS/2023.2/lnx64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=/home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/a.g.ld.3.fpc.bc.opt.diag.yml /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=fir_hls -reflow-float-conversion -o /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/a.g.ld.3.fpc.bc > /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/a.g.ld.3.fpc.bc.opt.out.log 2> /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/a.g.ld.3.fpc.bc.opt.err.log
+INFO-FLOW: 
+INFO-FLOW: Running: gen_design_size_report post-opt
+INFO-FLOW: Done: gen_design_size_report post-opt time: 0 seconds per iteration
+Command       run_link_or_opt done; 0.42 sec.
+Execute       run_link_or_opt -out /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/a.g.ld.4.m2.bc -args /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/a.g.ld.3.fpc.bc -only-needed /tools/Xilinx/Vitis_HLS/2023.2/lnx64/lib/libfloatconversion_39.bc 
+INFO-FLOW: run_clang exec: /tools/Xilinx/Vitis_HLS/2023.2/lnx64/tools/clang-3.9-csynth/bin/llvm-link /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/a.g.ld.3.fpc.bc -only-needed /tools/Xilinx/Vitis_HLS/2023.2/lnx64/lib/libfloatconversion_39.bc -o /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/a.g.ld.4.m2.bc > /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/a.g.ld.4.m2.bc.llvm-link.out.log 2> /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/a.g.ld.4.m2.bc.llvm-link.err.log
+INFO-FLOW: 
+Execute       run_link_or_opt -opt -out /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/a.g.ld.5.gdce.bc -args /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=fir_hls 
+INFO-FLOW: run_clang exec: /tools/Xilinx/Vitis_HLS/2023.2/lnx64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=/home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/a.g.ld.5.gdce.bc.opt.diag.yml /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=fir_hls -o /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/a.g.ld.5.gdce.bc > /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/a.g.ld.5.gdce.bc.opt.out.log 2> /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/a.g.ld.5.gdce.bc.opt.err.log
+INFO-FLOW: 
+INFO-FLOW: Running: gen_design_size_report post-opt
+INFO-FLOW: Done: gen_design_size_report post-opt time: 0 seconds per iteration
+Execute       send_msg_by_id INFO @200-777@%s Vitis 
+INFO: [HLS 200-777] Using interface defaults for 'Vitis' flow target.
+Execute       is_m_axi_addr64 
+INFO-FLOW: Doing LTO.
+INFO-FLOW: run_clang (background poll_ms 5000) exec: /tools/Xilinx/Vitis_HLS/2023.2/lnx64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=/home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/a.g.ld.0.bc.clang.reflow.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fhls -mllvm -hls-top-function-name=fir_hls -mllvm -hls-db-dir -mllvm /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db -emit-llvm -c -target fpga64-xilinx-none -mllvm -xcl-xmlinfo=/home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/../../kernel.xml -mllvm -top-io-mapping-info=/home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/top-io-fe.xml -mllvm -hls-bitcode-version=3.1 -mllvm -reflow-enable-slave-interface-default-setting=true -mllvm -gen-kernel-xml=true -mllvm -default-maxi-offset=slave -mllvm -maxi-latency=64 -mllvm -hls-maxi-data-size-in-bits=8 -mllvm -hls-maxi-max-data-size-in-bits=1024 -mllvm -hls-max-widen-size-in-bits=512 -mllvm -xcl-kernel-max-mem-ports=0 -mllvm -maxi-read-trans=16 -mllvm -maxi-write-trans=16 -mllvm -maxi-read-burst-len=16 -mllvm -maxi-write-burst-len=16 -mllvm -reflow-enable-saxi-64bits=0 -mllvm -reflow-basic-block-instr-threshold=200000 -mllvm -reflow-auto-pipeline-threshold=64 -mllvm -reflow-enable-maxi-auto-id-channel=0 -mllvm -enable-fp-thr=0 -mllvm -reflow-bdd-simplify-threshold=1048576 -mllvm -reflow-fanout-threshold=16 -mllvm -assume-maxi-align=64 -mllvm -reflow-pipeline-style-llvm-setting=2 -mllvm -reflow-enable-dataflow-strict-mode-checking=1 -ftime-report -mllvm -time-passes -mllvm -reflow-auto-array-partition-mode=default -mllvm -reflow-enable-auto-array-partition=true -mllvm -reflow-enable-auto-parallel-performance-driven=true -mllvm -reflow-enable-partition-for-automation=true -mllvm -reflow-aggregate-bitwidth-threshold=4096 -mllvm -reflow-reserved-saxilite-registers=0 -mllvm -enable-reflow-auto-loop-pipeline -mllvm -reflow-max-unroll-threshold=409600 -mllvm -reflow-assume-no-address-wrap=true -mllvm -reflow-enable-occurrence-inference=true -mllvm -reflow-emit-hint-scope=true -mllvm -hls -mllvm -disable-inlined-alloca-merging=true -mllvm -enable-reflow-vitis-flow-setting=true -mllvm -default-clock-period=8 -x ir /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/a.g.ld.5.gdce.bc -o /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/a.g.lto.bc -hls-platform-db-name=/tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/platform.db -hls-platform-name=versal_medium -device-resource-info=BRAM_1934.000000_DSP_1968.000000_FF_1799680.000000_LUT_899840.000000_SLICE_112480.000000_URAM_463.000000 -device-name-info=xcvc1902-vsva2197-2MP-e-S 2> /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/a.g.ld.0.bc.clang.reflow.err.log bg_poll_cmd: ::AP::poll_clang_39_closed_source
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 101 Compile/Link /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 101 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 49 Unroll/Inline (step 1) /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 49 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 43 Unroll/Inline (step 2) /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 43 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 43 Unroll/Inline (step 3) /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 43 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 43 Unroll/Inline (step 4) /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 43 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 43 Array/Struct (step 1) /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 43 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 43 Array/Struct (step 2) /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 43 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 43 Array/Struct (step 3) /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 43 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 43 Array/Struct (step 4) /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 43 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 44 Array/Struct (step 5) /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 44 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 43 Performance (step 1) /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 43 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 58 Performance (step 2) /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 58 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 75 Performance (step 3) /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 75 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 63 Performance (step 4) /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 63 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 64 HW Transforms (step 1) /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 64 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 76 HW Transforms (step 2) /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 76 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-376] automatically set the pipeline for Loop< unknown> at  
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_12_1> at /home/fran/Documentos/progra/sys_fir/fuentes/HLS/fir_2.cpp:12:22 
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_15_2' is marked as complete unroll implied by the pipeline pragma (/home/fran/Documentos/progra/sys_fir/fuentes/HLS/fir_2.cpp:15:26)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_22_3' is marked as complete unroll implied by the pipeline pragma (/home/fran/Documentos/progra/sys_fir/fuentes/HLS/fir_2.cpp:22:26)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_15_2' (/home/fran/Documentos/progra/sys_fir/fuentes/HLS/fir_2.cpp:15:26) in function 'fir_hls' completely with a factor of 7 (/home/fran/Documentos/progra/sys_fir/fuentes/HLS/fir_2.cpp:7:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_22_3' (/home/fran/Documentos/progra/sys_fir/fuentes/HLS/fir_2.cpp:22:26) in function 'fir_hls' completely with a factor of 8 (/home/fran/Documentos/progra/sys_fir/fuentes/HLS/fir_2.cpp:7:0)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'shift_reg' due to pipeline pragma (/home/fran/Documentos/progra/sys_fir/fuentes/HLS/fir_2.cpp:10:13)
+INFO: [HLS 214-248] Applying array_partition to 'shift_reg': Complete partitioning on dimension 1. (/home/fran/Documentos/progra/sys_fir/fuentes/HLS/fir_2.cpp:10:13)
+INFO-FLOW: DBG:PUTS: copy_raw_kernel_xml ap_link_39: copying raw kernel.xml: /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/../../kernel.xml -> /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/kernel.internal.xml
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1.51 seconds. CPU system time: 0.24 seconds. Elapsed time: 6.59 seconds; current allocated memory: 293.844 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 293.844 MB.
+Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
+Execute         cleanup_all_models 
+INFO: [HLS 200-10] Starting code transformations ...
+INFO-FLOW: Running Standard Transforms...
+Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top fir_hls -deadargelim -mem2reg -instcombine -dce -presyn-prepare -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -auto-shift-reg-idiom -promote-dbg-pointer -norm-name /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/a.g.0.bc -o /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/a.g.1.bc -f -phase std-opt 
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 294.297 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO-FLOW: Checking Synthesizability 1/2..
+Execute         transform -hls -syn-check -check-rec-only -scalarrepl -norm-name -dce -mem2reg -instcombine -directive-preproc -mem2reg -dse -dce -dce -pag -array-normalize -instcombine -dce -array-seg-normalize -instcombine -dce -data-pack -instcombine -dce -inst-simplify -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -directive-preproc -mem2reg -dse -dce -globaldce /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/a.g.1.bc -o /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/a.g.2.prechk.bc -f 
+INFO-FLOW: Checking Synthesizability 2/2..
+Execute         transform -syn-check /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/a.g.2.prechk.bc -o /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/a.g.2.bc -f -phase syn-check 
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 294.363 MB.
+INFO-FLOW: Compiler optimizing ...
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/a.g.1.bc to /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/a.o.1.bc
+INFO-FLOW: Presyn 1...
+Execute         transform -hls -tmp /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db -interface-port-rename -directive-preproc -mem2reg -dse -dce -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -dce -resource-proc -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -ptrArgReplace -mem2reg -dce -array-seg-normalize -deadargelim -instcombine -dce -directive-preproc -mem2reg -dse -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -scalar-auto-dep-elim -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -prepare-dynamic-array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -dce -global-constprop -deadargelim -mem2reg -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -scalar-auto-dep-elim -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -dce -norm-name -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -accesses-merge -function-inline -complex-op-raise -inst-simplify -globaldce -func-legal -dce -loop-bound -arraycheck -bitwidthmin2 -bitwidthmin2 -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -duplicate-dataflow-processes -check-dataflow-syntax -legalize-stream-variable -globaldce -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -hls-dead-arg-elim -deadargelim -directive-preproc -canonicalize-dataflow -dce -globaldce -scalar-preprocessing -scalar-propagation2 -scalar-stream -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -clean-array-spec -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -hls-display -norm-name /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/a.o.1.bc -o /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/a.o.1.tmp.bc -f 
+INFO-FLOW: Presyn 2...
+Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin2 -bitwidthmin2 -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -barrier -norm-name /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/a.o.1.tmp.bc -o /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/a.o.2.bc -f -phase presyn 
+INFO: [XFORM 203-11] Balancing expressions in function 'fir_hls' (/home/fran/Documentos/progra/sys_fir/fuentes/HLS/fir_2.cpp:6:22)...7 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.03 seconds; current allocated memory: 316.105 MB.
+INFO-FLOW: Building ssdm...
+Execute         transform -hls -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -aggr-aa -licm -loop-dep -loop-bound -licm -loop-simplify -loop-sink-hoist -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg-lite -loop-simplify -array-burst -promote-global-argument -dce -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg-lite -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -deadargelim -dce -canonicalize-dataflow -dce -deadargelim -globaldce -mem2reg -bram-byte-enable -inst-simplify -inst-rectify -instcombine -adce -deadargelim -load-elim -read-loop-dep -loop-simplify -loop-extract-inner -directive-preproc -bitwidthmin2 -bitwidthmin2 -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable-spec-prop -deadargelim -inst-simplify -dce -mem2reg -instcombine -gvn -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg-lite -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -float-op-raise -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg-lite -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg-lite -loop-simplify -mergereturn -inst-simplify -inst-rectify -globaldce -dce -load-elim -bitop-lower -float-op-raise -fma-raise -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -dyn-mem-reuse -dce -recurrence-min -dce -share-scalar-alloca -deadargelim -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -bitwidth -dce -dump-loop-dep-to-ir -check-all-ssdm -dump-complexity-metric -cdfg-build /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/a.o.2.bc -o /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+Execute           auto_get_db
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 326.621 MB.
+INFO-FLOW: Finish building internal data model.
+Command     elaborate done; 7.84 sec.
+Execute     ap_eval exec zip -j /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/dut.hcp $dbDir/a.o.3.bc $dbDir/${topname}.rtl_wrap.cfg.tcl $dbDir/apatb_${topname}.cpp $dbDir/apatb_${topname}_util.cpp $dbDir/apatb_${topname}_ir.ll $dbDir/mapper_${topname}.cpp $dbDir/top-io-fe.xml $dbDir/kernel.internal.xml $workdir/../hls.app 
+Execute     autosyn -from_csynth_design=1 
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO-FLOW: Synthesizing C/C++ design ...
+INFO: [HLS 200-10] Synthesizing 'fir_hls' ...
+Execute       ap_set_top_model fir_hls 
+Execute       get_model_list fir_hls -filter all-wo-channel -topdown 
+Execute       preproc_iomode -model fir_hls 
+Execute       preproc_iomode -model fir_hls_Pipeline_VITIS_LOOP_12_1 
+Execute       preproc_iomode -model fir_hls_Pipeline_1 
+Execute       get_model_list fir_hls -filter all-wo-channel 
+INFO-FLOW: Model list for configure: fir_hls_Pipeline_1 fir_hls_Pipeline_VITIS_LOOP_12_1 fir_hls
+INFO-FLOW: Configuring Module : fir_hls_Pipeline_1 ...
+Execute       set_default_model fir_hls_Pipeline_1 
+Execute       apply_spec_resource_limit fir_hls_Pipeline_1 
+INFO-FLOW: Configuring Module : fir_hls_Pipeline_VITIS_LOOP_12_1 ...
+Execute       set_default_model fir_hls_Pipeline_VITIS_LOOP_12_1 
+Execute       apply_spec_resource_limit fir_hls_Pipeline_VITIS_LOOP_12_1 
+INFO-FLOW: Configuring Module : fir_hls ...
+Execute       set_default_model fir_hls 
+Execute       apply_spec_resource_limit fir_hls 
+INFO-FLOW: Model list for preprocess: fir_hls_Pipeline_1 fir_hls_Pipeline_VITIS_LOOP_12_1 fir_hls
+INFO-FLOW: Preprocessing Module: fir_hls_Pipeline_1 ...
+Execute       set_default_model fir_hls_Pipeline_1 
+Execute       cdfg_preprocess -model fir_hls_Pipeline_1 
+Execute       rtl_gen_preprocess fir_hls_Pipeline_1 
+INFO-FLOW: Preprocessing Module: fir_hls_Pipeline_VITIS_LOOP_12_1 ...
+Execute       set_default_model fir_hls_Pipeline_VITIS_LOOP_12_1 
+Execute       cdfg_preprocess -model fir_hls_Pipeline_VITIS_LOOP_12_1 
+Execute       rtl_gen_preprocess fir_hls_Pipeline_VITIS_LOOP_12_1 
+INFO-FLOW: Preprocessing Module: fir_hls ...
+Execute       set_default_model fir_hls 
+Execute       cdfg_preprocess -model fir_hls 
+Execute       rtl_gen_preprocess fir_hls 
+INFO-FLOW: Model list for synthesis: fir_hls_Pipeline_1 fir_hls_Pipeline_VITIS_LOOP_12_1 fir_hls
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fir_hls_Pipeline_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model fir_hls_Pipeline_1 
+Execute       schedule -model fir_hls_Pipeline_1 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'Loop 1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.06 seconds; current allocated memory: 328.953 MB.
+Execute       syn_report -verbosereport -o /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_hls_Pipeline_1.verbose.sched.rpt 
+Execute         list_part -family xcvc1902-vsva2197-2MP-e-S 
+Execute           ap_family_info -name xcvc1902-vsva2197-2MP-e-S -data names 
+Execute           ap_part_info -quiet -name xcvc1902-vsva2197-2MP-e-S -data family 
+Execute       db_write -o /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_hls_Pipeline_1.sched.adb -f 
+INFO-FLOW: Finish scheduling fir_hls_Pipeline_1.
+Execute       set_default_model fir_hls_Pipeline_1 
+Execute       bind -model fir_hls_Pipeline_1 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 328.953 MB.
+Execute       syn_report -verbosereport -o /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_hls_Pipeline_1.verbose.bind.rpt 
+Execute         list_part -family xcvc1902-vsva2197-2MP-e-S 
+Execute           ap_family_info -name xcvc1902-vsva2197-2MP-e-S -data names 
+Execute           ap_part_info -quiet -name xcvc1902-vsva2197-2MP-e-S -data family 
+Execute       db_write -o /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_hls_Pipeline_1.bind.adb -f 
+INFO-FLOW: Finish binding fir_hls_Pipeline_1.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fir_hls_Pipeline_VITIS_LOOP_12_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model fir_hls_Pipeline_VITIS_LOOP_12_1 
+Execute       schedule -model fir_hls_Pipeline_VITIS_LOOP_12_1 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_12_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'VITIS_LOOP_12_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 329.785 MB.
+Execute       syn_report -verbosereport -o /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_hls_Pipeline_VITIS_LOOP_12_1.verbose.sched.rpt 
+Execute         list_part -family xcvc1902-vsva2197-2MP-e-S 
+Execute           ap_family_info -name xcvc1902-vsva2197-2MP-e-S -data names 
+Execute           ap_part_info -quiet -name xcvc1902-vsva2197-2MP-e-S -data family 
+Execute       db_write -o /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_hls_Pipeline_VITIS_LOOP_12_1.sched.adb -f 
+INFO-FLOW: Finish scheduling fir_hls_Pipeline_VITIS_LOOP_12_1.
+Execute       set_default_model fir_hls_Pipeline_VITIS_LOOP_12_1 
+Execute       bind -model fir_hls_Pipeline_VITIS_LOOP_12_1 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 329.785 MB.
+Execute       syn_report -verbosereport -o /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_hls_Pipeline_VITIS_LOOP_12_1.verbose.bind.rpt 
+Execute         list_part -family xcvc1902-vsva2197-2MP-e-S 
+Execute           ap_family_info -name xcvc1902-vsva2197-2MP-e-S -data names 
+Execute           ap_part_info -quiet -name xcvc1902-vsva2197-2MP-e-S -data family 
+Execute       db_write -o /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_hls_Pipeline_VITIS_LOOP_12_1.bind.adb -f 
+INFO-FLOW: Finish binding fir_hls_Pipeline_VITIS_LOOP_12_1.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fir_hls' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model fir_hls 
+Execute       schedule -model fir_hls 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 329.785 MB.
+Execute       syn_report -verbosereport -o /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_hls.verbose.sched.rpt 
+Execute         list_part -family xcvc1902-vsva2197-2MP-e-S 
+Execute           ap_family_info -name xcvc1902-vsva2197-2MP-e-S -data names 
+Execute           ap_part_info -quiet -name xcvc1902-vsva2197-2MP-e-S -data family 
+Execute       db_write -o /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_hls.sched.adb -f 
+INFO-FLOW: Finish scheduling fir_hls.
+Execute       set_default_model fir_hls 
+Execute       bind -model fir_hls 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 329.785 MB.
+Execute       syn_report -verbosereport -o /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_hls.verbose.bind.rpt 
+Execute         list_part -family xcvc1902-vsva2197-2MP-e-S 
+Execute           ap_family_info -name xcvc1902-vsva2197-2MP-e-S -data names 
+Execute           ap_part_info -quiet -name xcvc1902-vsva2197-2MP-e-S -data family 
+Execute       db_write -o /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_hls.bind.adb -f 
+INFO-FLOW: Finish binding fir_hls.
+Execute       get_model_list fir_hls -filter all-wo-channel 
+INFO-FLOW: Preprocessing for RTLGen ...
+Execute       rtl_gen_preprocess fir_hls_Pipeline_1 
+Execute       rtl_gen_preprocess fir_hls_Pipeline_VITIS_LOOP_12_1 
+Execute       rtl_gen_preprocess fir_hls 
+INFO-FLOW: Model list for RTL generation: fir_hls_Pipeline_1 fir_hls_Pipeline_VITIS_LOOP_12_1 fir_hls
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fir_hls_Pipeline_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       create_rtl_model fir_hls_Pipeline_1 -top_prefix fir_hls_ -sub_prefix fir_hls_ -mg_file /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_hls_Pipeline_1.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fir_hls_Pipeline_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 329.785 MB.
+Execute       source /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_hls.rtl_wrap.cfg.tcl 
+Execute       gen_rtl fir_hls_Pipeline_1 -style xilinx -f -lang vhdl -o /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/syn/vhdl/fir_hls_fir_hls_Pipeline_1 
+Execute       gen_rtl fir_hls_Pipeline_1 -style xilinx -f -lang vlog -o /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/syn/verilog/fir_hls_fir_hls_Pipeline_1 
+Execute       syn_report -csynth -model fir_hls_Pipeline_1 -o /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/syn/report/fir_hls_Pipeline_1_csynth.rpt 
+Execute         list_part -family xcvc1902-vsva2197-2MP-e-S 
+Execute           ap_family_info -name xcvc1902-vsva2197-2MP-e-S -data names 
+Execute           ap_part_info -quiet -name xcvc1902-vsva2197-2MP-e-S -data family 
+Execute       syn_report -rtlxml -model fir_hls_Pipeline_1 -o /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/syn/report/fir_hls_Pipeline_1_csynth.xml 
+Execute         list_part -family xcvc1902-vsva2197-2MP-e-S 
+Execute           ap_family_info -name xcvc1902-vsva2197-2MP-e-S -data names 
+Execute           ap_part_info -quiet -name xcvc1902-vsva2197-2MP-e-S -data family 
+Execute       syn_report -verbosereport -model fir_hls_Pipeline_1 -o /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_hls_Pipeline_1.verbose.rpt 
+Execute         list_part -family xcvc1902-vsva2197-2MP-e-S 
+Execute           ap_family_info -name xcvc1902-vsva2197-2MP-e-S -data names 
+Execute           ap_part_info -quiet -name xcvc1902-vsva2197-2MP-e-S -data family 
+Execute       db_write -model fir_hls_Pipeline_1 -f -o /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_hls_Pipeline_1.adb 
+Execute       db_write -model fir_hls_Pipeline_1 -bindview -o /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info fir_hls_Pipeline_1 -p /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db -o /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_hls_Pipeline_1 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fir_hls_Pipeline_VITIS_LOOP_12_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       create_rtl_model fir_hls_Pipeline_VITIS_LOOP_12_1 -top_prefix fir_hls_ -sub_prefix fir_hls_ -mg_file /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_hls_Pipeline_VITIS_LOOP_12_1.compgen.tcl 
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'fir_hls_Pipeline_VITIS_LOOP_12_1' pipeline 'VITIS_LOOP_12_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fir_hls_Pipeline_VITIS_LOOP_12_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 330.734 MB.
+Execute       source /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_hls.rtl_wrap.cfg.tcl 
+Execute       gen_rtl fir_hls_Pipeline_VITIS_LOOP_12_1 -style xilinx -f -lang vhdl -o /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/syn/vhdl/fir_hls_fir_hls_Pipeline_VITIS_LOOP_12_1 
+Execute       gen_rtl fir_hls_Pipeline_VITIS_LOOP_12_1 -style xilinx -f -lang vlog -o /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/syn/verilog/fir_hls_fir_hls_Pipeline_VITIS_LOOP_12_1 
+Execute       syn_report -csynth -model fir_hls_Pipeline_VITIS_LOOP_12_1 -o /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/syn/report/fir_hls_Pipeline_VITIS_LOOP_12_1_csynth.rpt 
+Execute         list_part -family xcvc1902-vsva2197-2MP-e-S 
+Execute           ap_family_info -name xcvc1902-vsva2197-2MP-e-S -data names 
+Execute           ap_part_info -quiet -name xcvc1902-vsva2197-2MP-e-S -data family 
+Execute       syn_report -rtlxml -model fir_hls_Pipeline_VITIS_LOOP_12_1 -o /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/syn/report/fir_hls_Pipeline_VITIS_LOOP_12_1_csynth.xml 
+Execute         list_part -family xcvc1902-vsva2197-2MP-e-S 
+Execute           ap_family_info -name xcvc1902-vsva2197-2MP-e-S -data names 
+Execute           ap_part_info -quiet -name xcvc1902-vsva2197-2MP-e-S -data family 
+Execute       syn_report -verbosereport -model fir_hls_Pipeline_VITIS_LOOP_12_1 -o /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_hls_Pipeline_VITIS_LOOP_12_1.verbose.rpt 
+Execute         list_part -family xcvc1902-vsva2197-2MP-e-S 
+Execute           ap_family_info -name xcvc1902-vsva2197-2MP-e-S -data names 
+Execute           ap_part_info -quiet -name xcvc1902-vsva2197-2MP-e-S -data family 
+Execute       db_write -model fir_hls_Pipeline_VITIS_LOOP_12_1 -f -o /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_hls_Pipeline_VITIS_LOOP_12_1.adb 
+Execute       db_write -model fir_hls_Pipeline_VITIS_LOOP_12_1 -bindview -o /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info fir_hls_Pipeline_VITIS_LOOP_12_1 -p /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db -o /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_hls_Pipeline_VITIS_LOOP_12_1 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fir_hls' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       create_rtl_model fir_hls -top_prefix  -sub_prefix fir_hls_ -mg_file /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_hls.compgen.tcl 
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fir_hls/in_stream' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'fir_hls/out_stream' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'fir_hls' to 's_axilite & ap_ctrl_chain'.
+INFO: [RTGEN 206-100] Bundling port 'return' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fir_hls'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.07 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.08 seconds; current allocated memory: 332.879 MB.
+Execute       source /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_hls.rtl_wrap.cfg.tcl 
+Execute       gen_rtl fir_hls -istop -style xilinx -f -lang vhdl -o /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/syn/vhdl/fir_hls 
+Execute       gen_rtl fir_hls -istop -style xilinx -f -lang vlog -o /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/syn/verilog/fir_hls 
+Execute       syn_report -csynth -model fir_hls -o /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/syn/report/fir_hls_csynth.rpt 
+Execute         list_part -family xcvc1902-vsva2197-2MP-e-S 
+Execute           ap_family_info -name xcvc1902-vsva2197-2MP-e-S -data names 
+Execute           ap_part_info -quiet -name xcvc1902-vsva2197-2MP-e-S -data family 
+Execute       syn_report -rtlxml -model fir_hls -o /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/syn/report/fir_hls_csynth.xml 
+Execute         list_part -family xcvc1902-vsva2197-2MP-e-S 
+Execute           ap_family_info -name xcvc1902-vsva2197-2MP-e-S -data names 
+Execute           ap_part_info -quiet -name xcvc1902-vsva2197-2MP-e-S -data family 
+Execute       syn_report -verbosereport -model fir_hls -o /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_hls.verbose.rpt 
+Execute         list_part -family xcvc1902-vsva2197-2MP-e-S 
+Execute           ap_family_info -name xcvc1902-vsva2197-2MP-e-S -data names 
+Execute           ap_part_info -quiet -name xcvc1902-vsva2197-2MP-e-S -data family 
+Execute       db_write -model fir_hls -f -o /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_hls.adb 
+Execute       db_write -model fir_hls -bindview -o /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info fir_hls -p /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db -o /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_hls 
+Execute       export_constraint_db -f -tool general -o /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_hls.constraint.tcl 
+Execute       syn_report -designview -model fir_hls -o /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_hls.design.xml 
+Execute       syn_report -csynthDesign -model fir_hls -o /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/syn/report/csynth.rpt -MHOut /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/kernel_module_hierarchy.tcl 
+Execute         list_part -family xcvc1902-vsva2197-2MP-e-S 
+Execute           ap_family_info -name xcvc1902-vsva2197-2MP-e-S -data names 
+Execute           ap_part_info -quiet -name xcvc1902-vsva2197-2MP-e-S -data family 
+Execute       syn_report -wcfg -model fir_hls -o /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_hls_dataflow_ana.wcfg 
+Execute       syn_report -protoinst -model fir_hls -o /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_hls.protoinst 
+Execute       sc_get_clocks fir_hls 
+Execute       sc_get_portdomain fir_hls 
+INFO-FLOW: Model list for RTL component generation: fir_hls_Pipeline_1 fir_hls_Pipeline_VITIS_LOOP_12_1 fir_hls
+INFO-FLOW: Handling components in module [fir_hls_Pipeline_1] ... 
+Execute       source /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_hls_Pipeline_1.compgen.tcl 
+INFO-FLOW: Found component fir_hls_flow_control_loop_pipe_sequential_init.
+INFO-FLOW: Append model fir_hls_flow_control_loop_pipe_sequential_init
+INFO-FLOW: Handling components in module [fir_hls_Pipeline_VITIS_LOOP_12_1] ... 
+Execute       source /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_hls_Pipeline_VITIS_LOOP_12_1.compgen.tcl 
+INFO-FLOW: Found component fir_hls_flow_control_loop_pipe_sequential_init.
+INFO-FLOW: Append model fir_hls_flow_control_loop_pipe_sequential_init
+INFO-FLOW: Handling components in module [fir_hls] ... 
+Execute       source /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_hls.compgen.tcl 
+INFO-FLOW: Found component fir_hls_control_s_axi.
+INFO-FLOW: Append model fir_hls_control_s_axi
+INFO-FLOW: Found component fir_hls_regslice_both.
+INFO-FLOW: Append model fir_hls_regslice_both
+INFO-FLOW: Found component fir_hls_regslice_both.
+INFO-FLOW: Append model fir_hls_regslice_both
+INFO-FLOW: Append model fir_hls_Pipeline_1
+INFO-FLOW: Append model fir_hls_Pipeline_VITIS_LOOP_12_1
+INFO-FLOW: Append model fir_hls
+INFO-FLOW: Generating RTL model list ...
+INFO-FLOW: All models in this session: fir_hls_flow_control_loop_pipe_sequential_init fir_hls_flow_control_loop_pipe_sequential_init fir_hls_control_s_axi fir_hls_regslice_both fir_hls_regslice_both fir_hls_Pipeline_1 fir_hls_Pipeline_VITIS_LOOP_12_1 fir_hls
+INFO-FLOW: Generating /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/autopilot.rtl.models.txt file...
+INFO-FLOW: To file: write model fir_hls_flow_control_loop_pipe_sequential_init
+INFO-FLOW: To file: write model fir_hls_flow_control_loop_pipe_sequential_init
+INFO-FLOW: To file: write model fir_hls_control_s_axi
+INFO-FLOW: To file: write model fir_hls_regslice_both
+INFO-FLOW: To file: write model fir_hls_regslice_both
+INFO-FLOW: To file: write model fir_hls_Pipeline_1
+INFO-FLOW: To file: write model fir_hls_Pipeline_VITIS_LOOP_12_1
+INFO-FLOW: To file: write model fir_hls
+INFO-FLOW: Generating /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/autopilot.rtl.models.tcl file...
+INFO-FLOW: Finished generating RTL model list.
+
+
+INFO-FLOW: RTL Generation done.
+INFO-FLOW: CAS Generation done.
+INFO-FLOW: CBC Generation done.
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::auto_generate_csynth_design
+INFO-FLOW: DBG:PUTS: read_platform_lib /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/global.setting.tcl
+Execute       source /tools/Xilinx/Vitis_HLS/2023.2/common/technology/generic/autopilot/common.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2023.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2023.2/common/technology/generic/autopilot/op.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2023.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2023.2/common/technology/generic/autopilot/interface.gen 
+Execute       source /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/global.setting.tcl 
+Execute       ap_family_info -name versalprimees1 -data parts 
+Execute       source /tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=8.000 (was NA)
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::generate_ip_cores gen_sim_model='1' gen_fp_models='0' gen_for_export='0' dstSCDir='' dstVhdlDir='/home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/vhdl' dstVlogDir='/home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/vlog' tclDir='/home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db' modelList='fir_hls_flow_control_loop_pipe_sequential_init
+fir_hls_flow_control_loop_pipe_sequential_init
+fir_hls_control_s_axi
+fir_hls_regslice_both
+fir_hls_regslice_both
+fir_hls_Pipeline_1
+fir_hls_Pipeline_VITIS_LOOP_12_1
+fir_hls
+' expOnly='0'
+Execute       source /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute       ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+Execute       source /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/global.setting.tcl 
+Execute       source /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/global.setting.tcl 
+Execute       source /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_hls_Pipeline_1.compgen.tcl 
+Execute       source /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_hls_Pipeline_VITIS_LOOP_12_1.compgen.tcl 
+Execute       source /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_hls.compgen.tcl 
+Execute         source ./control.slave.tcl 
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.2 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.21 seconds; current allocated memory: 336.211 MB.
+INFO-FLOW: DBG:PROC: ::HLSREPORTS::create_csynth_xml bind_info_var='bind_info' RtlSubPrefix='fir_hls_' outfile=''
+INFO-FLOW: Running: create_csynth_xml read xml data
+INFO-FLOW: Done: create_csynth_xml read xml data time: 0 seconds per iteration
+INFO-FLOW: Running: create_csynth_xml bind info
+INFO-FLOW: No bind nodes found for module_name fir_hls
+INFO-FLOW: Done: create_csynth_xml bind info time: 0 seconds per iteration
+INFO-FLOW: Running: create_csynth_xml config info
+INFO-FLOW: Done: create_csynth_xml config info time: 0.1 seconds per iteration
+INFO-FLOW: Running: create_csynth_xml write xml
+INFO-FLOW: Done: create_csynth_xml write xml time: 0 seconds per iteration
+INFO-FLOW: DBG:PUTS:      create_csynth_xml wrote csynth_xml=/home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/syn/report/csynth.xml
+INFO-FLOW: DBG:PROC: ::AP::DESIGN_DATA::generate_json generate_bd_files='0' generate_xo_files='0' modelList='fir_hls_flow_control_loop_pipe_sequential_init
+fir_hls_flow_control_loop_pipe_sequential_init
+fir_hls_control_s_axi
+fir_hls_regslice_both
+fir_hls_regslice_both
+fir_hls_Pipeline_1
+fir_hls_Pipeline_VITIS_LOOP_12_1
+fir_hls
+' rtl_lang='both' bootstrap_tcl='false' outdir='' outfilename=''
+Execute       source /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/global.setting.tcl 
+Execute       source /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/global.setting.tcl 
+Execute       source /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/top-io-be.tcl 
+Execute       source /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_hls.tbgen.tcl 
+Execute       source /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_hls.compgen.dataonly.tcl 
+Execute       source /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_hls.compgen.dataonly.tcl 
+Execute       source /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_hls.rtl_wrap.cfg.tcl 
+Execute       source /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_hls.compgen.dataonly.tcl 
+Execute       source /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_hls_Pipeline_1.tbgen.tcl 
+Execute       source /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_hls_Pipeline_VITIS_LOOP_12_1.tbgen.tcl 
+Execute       source /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_hls.tbgen.tcl 
+Execute       source /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute       ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+Execute       source /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_hls.constraint.tcl 
+Execute       sc_get_clocks fir_hls 
+Execute       source /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PROC: ::HLSREPORTS::add_csynth_report_sections bind_info_dict='adapter_nodes {{BINDTYPE adapter ID {} IMPL {} LATENCY {} OPTYPE {} PRAGMA {} RTLNAME control_s_axi_U SOURCE {} VARIABLE {} LOOP {} BUNDLEDNAME control DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE s_axilite STORAGESIZE {} STORAGEUSAGE interface DISPNAME {bind_adapter }}} report_dict {TOPINST fir_hls MODULE2INSTS {fir_hls fir_hls fir_hls_Pipeline_1 grp_fir_hls_Pipeline_1_fu_66 fir_hls_Pipeline_VITIS_LOOP_12_1 grp_fir_hls_Pipeline_VITIS_LOOP_12_1_fu_77} INST2MODULE {fir_hls fir_hls grp_fir_hls_Pipeline_1_fu_66 fir_hls_Pipeline_1 grp_fir_hls_Pipeline_VITIS_LOOP_12_1_fu_77 fir_hls_Pipeline_VITIS_LOOP_12_1} INSTDATA {fir_hls {DEPTH 1 CHILDREN {grp_fir_hls_Pipeline_1_fu_66 grp_fir_hls_Pipeline_VITIS_LOOP_12_1_fu_77}} grp_fir_hls_Pipeline_1_fu_66 {DEPTH 2 CHILDREN {}} grp_fir_hls_Pipeline_VITIS_LOOP_12_1_fu_77 {DEPTH 2 CHILDREN {}}} MODULEDATA {fir_hls_Pipeline_1 {BINDINFO {{BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME empty_10_fu_195_p2 SOURCE {} VARIABLE empty_10 LOOP {Loop 1} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}}} AREA {DSP 0 BRAM 0 URAM 0}} fir_hls_Pipeline_VITIS_LOOP_12_1 {BINDINFO {{BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME i_2_fu_303_p2 SOURCE /home/fran/Documentos/progra/sys_fir/fuentes/HLS/fir_2.cpp:12 VARIABLE i_2 LOOP VITIS_LOOP_12_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln23_fu_431_p2 SOURCE /home/fran/Documentos/progra/sys_fir/fuentes/HLS/fir_2.cpp:23 VARIABLE add_ln23 LOOP VITIS_LOOP_12_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln23_1_fu_437_p2 SOURCE /home/fran/Documentos/progra/sys_fir/fuentes/HLS/fir_2.cpp:23 VARIABLE add_ln23_1 LOOP VITIS_LOOP_12_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln23_4_fu_455_p2 SOURCE /home/fran/Documentos/progra/sys_fir/fuentes/HLS/fir_2.cpp:23 VARIABLE add_ln23_4 LOOP VITIS_LOOP_12_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}}} AREA {DSP 0 BRAM 0 URAM 0}} fir_hls {AREA {DSP 0 BRAM 0 URAM 0}}}}'
+INFO-FLOW: DBG:PUTS:      update_csynth_reports json2rpt_hw_sw_interfaces
+INFO-FLOW: Running: gen_csynth_sec_pragma
+INFO-FLOW: Done: gen_csynth_sec_pragma time: 0 seconds per iteration
+INFO-FLOW: DBG:PUTS:      update_csynth_reports wrote xml
+INFO-FLOW: DBG:PUTS:      update_csynth_reports appended to csynth rpt file
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.22 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.24 seconds; current allocated memory: 341.363 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for fir_hls.
+INFO: [VLOG 209-307] Generating Verilog RTL for fir_hls.
+Execute       syn_report -model fir_hls -printsummary 
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 210.88 MHz
+Command     autosyn done; 0.82 sec.
+Command   csynth_design done; 8.75 sec.
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 3.33 seconds. CPU system time: 0.6 seconds. Elapsed time: 8.75 seconds; current allocated memory: 51.230 MB.
+Execute   close_project 
+INFO: [HLS 200-1510] Running: close_project 
+Execute     close_solution 
+Execute       cleanup_all 
+Execute       cleanup_all 
+INFO-FLOW: Workspace /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls opened at Mon Mar 03 19:17:22 CET 2025
+Execute     send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Execute   apply_ini /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_2.cfg 
+INFO: [HLS 200-1510] Running: apply_ini /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_2.cfg 
+Execute     send_msg_by_id INFO @200-1909@%s /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_2.cfg 
+INFO: [HLS 200-1909] Reading HLS ini file /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_2.cfg
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=/home/fran/Documentos/progra/sys_fir/fuentes/HLS/fir_2.cpp' at /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_2.cfg(7) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=/home/fran/Documentos/progra/sys_fir/fuentes/HLS/fir_2.cpp' at /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_2.cfg(7)
+Execute     add_files /home/fran/Documentos/progra/sys_fir/fuentes/HLS/fir_2.cpp 
+INFO: [HLS 200-10] Adding design file '/home/fran/Documentos/progra/sys_fir/fuentes/HLS/fir_2.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=/home/fran/Documentos/progra/sys_fir/fuentes/HLS/fir_2.h' at /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_2.cfg(8) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=/home/fran/Documentos/progra/sys_fir/fuentes/HLS/fir_2.h' at /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_2.cfg(8)
+Execute     add_files /home/fran/Documentos/progra/sys_fir/fuentes/HLS/fir_2.h 
+INFO: [HLS 200-10] Adding design file '/home/fran/Documentos/progra/sys_fir/fuentes/HLS/fir_2.h' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=fir_hls_TB.cpp' at /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_2.cfg(12) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=fir_hls_TB.cpp' at /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_2.cfg(12)
+Execute     add_files -tb /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls_TB.cpp 
+INFO: [HLS 200-10] Adding test bench file '/home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls_TB.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.top=fir_hls' at /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_2.cfg(9) 
+INFO: [HLS 200-1465] Applying ini 'syn.top=fir_hls' at /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_2.cfg(9)
+Execute     set_top fir_hls 
+Execute     send_msg_by_id INFO @200-1465@%s 'flow_target=vitis' at /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_2.cfg(4) 
+INFO: [HLS 200-1465] Applying ini 'flow_target=vitis' at /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_2.cfg(4)
+Execute     send_msg_by_id INFO @200-1505@%s%s  vitis 
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+Execute     send_msg_by_id INFO @200-435@%s%s 'open_solution -flow_target vitis' config_interface -m_axi_latency=64 
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_latency=64
+Execute     config_interface -m_axi_latency=64 
+Execute     send_msg_by_id INFO @200-435@%s%s 'open_solution -flow_target vitis' config_interface -m_axi_alignment_byte_size=64 
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_alignment_byte_size=64
+Execute     config_interface -m_axi_alignment_byte_size=64 
+Execute     send_msg_by_id INFO @200-435@%s%s 'open_solution -flow_target vitis' config_interface -m_axi_max_widen_bitwidth=512 
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_max_widen_bitwidth=512
+Execute     config_interface -m_axi_max_widen_bitwidth=512 
+INFO-FLOW: Setting macro_cmd open_solution -flow_target vitis configuration: config_interface -default_interface=kernel
+Execute     config_interface -default_interface=kernel 
+Execute     send_msg_by_id INFO @200-435@%s%s 'open_solution -flow_target vitis' config_rtl -register_reset_num=3 
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_rtl -register_reset_num=3
+Execute     config_rtl -register_reset_num=3 
+Execute     send_msg_by_id INFO @200-1465@%s 'part=xcvc1902-vsva2197-2MP-e-S' at /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_2.cfg(1) 
+INFO: [HLS 200-1465] Applying ini 'part=xcvc1902-vsva2197-2MP-e-S' at /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_2.cfg(1)
+Execute     set_part xcvc1902-vsva2197-2MP-e-S 
+Execute       create_platform xcvc1902-vsva2197-2MP-e-S -board  
+DBG:HLSDevice: Trying to load device library: /tools/Xilinx/Vitis_HLS/2023.2/lib/lnx64.o/libxv_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /tools/Xilinx/Vivado/2023.2/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xcvc1902-vsva2197-2MP-e-S'
+Command       create_platform done; 0.73 sec.
+Execute       source /tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info 
+Execute       config_compile -quiet -complex-mul-dsp=1 
+Command     set_part done; 0.83 sec.
+Execute     send_msg_by_id INFO @200-1465@%s 'clock=8ns' at /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_2.cfg(10) 
+INFO: [HLS 200-1465] Applying ini 'clock=8ns' at /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_2.cfg(10)
+Execute     create_clock -period 8ns 
+Execute       ap_set_clock -name default -period 8 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 8ns.
+Execute     send_msg_by_id INFO @200-1465@%s 'clock_uncertainty=12%' at /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_2.cfg(11) 
+INFO: [HLS 200-1465] Applying ini 'clock_uncertainty=12%' at /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_2.cfg(11)
+Execute     set_clock_uncertainty 12% 
+Execute       ap_set_clock -name default -uncertainty 0.96 -unit % 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.96ns.
+Execute     send_msg_by_id INFO @200-1465@%s 'package.output.format=xo' at /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_2.cfg(5) 
+INFO: [HLS 200-1465] Applying ini 'package.output.format=xo' at /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_2.cfg(5)
+Execute     config_export -format=xo 
+Command   apply_ini done; 0.84 sec.
+Execute   apply_ini /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/config.cmdline 
+INFO: [HLS 200-1510] Running: apply_ini /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/config.cmdline 
+Execute     send_msg_by_id INFO @200-1909@%s /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/config.cmdline 
+INFO: [HLS 200-1909] Reading HLS ini file /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/config.cmdline
+Execute   export_design -flow none 
+INFO: [HLS 200-1510] Running: export_design -flow none 
+Execute     AP::get_vpp_package_output_file
+Execute     config_export -flow=none 
+INFO-FLOW: DBG:PUTS: export_design_wrap: -format xo -rtl verilog
+Execute     source /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:   auto_impl: pack: -export -rtl verilog
+INFO-FLOW: DBG:PROC: ::AESL_AUTOIMPL::auto_impl args='-export -rtl verilog'
+Execute     source /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO-FLOW: DBG:PUTS: automg_wrap -export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::auto_generate args='-export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag'
+INFO-FLOW: DBG:PUTS:     auto_generate -export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag
+Execute     source /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS: read_platform_lib /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/global.setting.tcl
+Execute     source /tools/Xilinx/Vitis_HLS/2023.2/common/technology/generic/autopilot/common.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2023.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /tools/Xilinx/Vitis_HLS/2023.2/common/technology/generic/autopilot/op.gen 
+Execute     source /tools/Xilinx/Vitis_HLS/2023.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /tools/Xilinx/Vitis_HLS/2023.2/common/technology/generic/autopilot/interface.gen 
+Execute     source /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/global.setting.tcl 
+Execute     ap_family_info -name versalprimees1 -data parts 
+Execute     source /tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=8.000 (was NA)
+INFO-FLOW: DBG:PUTS:       initCTypeInfo top_module=fir_hls xml_exists=0
+Execute     source /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_hls.rtl_wrap.cfg.tcl 
+Execute     source /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_hls.rtl_wrap.cfg.tcl 
+Execute     source /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_hls.rtl_wrap.cfg.tcl 
+Execute     source /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_hls.tbgen.tcl 
+Execute     source /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_hls.tbgen.tcl 
+Execute     source /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/global.setting.tcl 
+Execute     source /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_hls.tbgen.tcl 
+INFO-FLOW: DBG:PUTS:       cosim_export_main adding deadlock detection to fir_hls
+INFO-FLOW: DBG:PUTS:       kernel.xml check internal_kernel_xml(1)=/home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/kernel.internal.xml top=fir_hls
+INFO-FLOW: DBG:PUTS:       kernel.xml check proj_kernel_xml    (1)=/home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/../../kernel.xml
+INFO-FLOW: DBG:PUTS:       copy internal kernel.xml to project: /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/../../kernel.xml
+INFO-FLOW: DBG:PUTS:       update_final_kernel_xml /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/../../kernel.xml
+INFO-FLOW: DBG:PUTS: Updating /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/../../kernel.xml with values: interrupt true debug false compileOptions {} name fir_hls vlnv xilinx.com:hls:fir_hls:1.0 swReset false mailbox none countedAutoRestart 0 deadlockDetection local
+INFO-FLOW: DBG:PUTS: Skipping loadAnalyze_DB, #g_database=2
+INFO-FLOW: DBG:PUTS:       generate_json generate_bd_files=0 generate_xo_files=true #modelList=8 #gSsdmPorts=0
+INFO-FLOW: DBG:PROC: ::AP::DESIGN_DATA::generate_json generate_bd_files='0' generate_xo_files='true' modelList='fir_hls_flow_control_loop_pipe_sequential_init
+fir_hls_flow_control_loop_pipe_sequential_init
+fir_hls_control_s_axi
+fir_hls_regslice_both
+fir_hls_regslice_both
+fir_hls_Pipeline_1
+fir_hls_Pipeline_VITIS_LOOP_12_1
+fir_hls
+' rtl_lang='vlog' bootstrap_tcl='false' outdir='' outfilename=''
+Execute     source /tools/Xilinx/Vitis_HLS/2023.2/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute     source /tools/Xilinx/Vitis_HLS/2023.2/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute     source /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/global.setting.tcl 
+Execute     source /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/global.setting.tcl 
+Execute     source /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/top-io-be.tcl 
+Execute     source /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_hls.tbgen.tcl 
+Execute     source /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_hls.compgen.dataonly.tcl 
+Execute     source /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_hls.compgen.dataonly.tcl 
+Execute     source /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_hls.rtl_wrap.cfg.tcl 
+Execute     source /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_hls.compgen.dataonly.tcl 
+Execute     source /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_hls_Pipeline_1.tbgen.tcl 
+Execute     source /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_hls_Pipeline_VITIS_LOOP_12_1.tbgen.tcl 
+Execute     source /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_hls.tbgen.tcl 
+Execute     source /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+Execute     source /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_hls.constraint.tcl 
+Execute     sc_get_clocks fir_hls 
+Execute     source /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/global.setting.tcl 
+Execute     source /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/global.setting.tcl 
+Execute     source /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_hls.tbgen.tcl 
+INFO-FLOW: DBG:PUTS:       cosim_export_main adding deadlock detection to fir_hls
+INFO-FLOW: DBG:PUTS:       copy ip_driver_dir 1_0 /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/driver
+INFO-FLOW: DBG:PUTS:       generate_ip_script #gSsdmPorts=0 g_lang=vlog is_sdaccel=true is_sdsoc=true xo_file=/home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/fir_hls.xo
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+Execute     source /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/global.setting.tcl 
+Execute     source /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_hls.tbgen.tcl 
+Execute     source /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_hls.compgen.dataonly.tcl 
+Execute     source /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_hls.compgen.dataonly.tcl 
+Execute     source /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_hls.tbgen.tcl 
+Execute     source /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:       generate_top_info
+INFO-FLOW: DBG:PUTS:       prepArgInfo -> loadAnalyze_DB top_module=fir_hls
+Execute     source /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_hls.rtl_wrap.cfg.tcl 
+Execute     source /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_hls.rtl_wrap.cfg.tcl 
+Execute     source /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_hls.rtl_wrap.cfg.tcl 
+Execute     source /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_hls.tbgen.tcl 
+Execute     source /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_hls.tbgen.tcl 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+Execute     source /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+Execute     source /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_hls.tbgen.tcl 
+Execute     source /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/global.setting.tcl 
+Execute     source /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_hls.constraint.tcl 
+INFO-FLOW: DBG:PUTS:       generate_syn_sh
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+Execute     source /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:       generate_imp_constraints
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+Execute     source /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_hls.constraint.tcl 
+Execute     source /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/fir_hls.tbgen.tcl 
+INFO-FLOW: DBG:PUTS:       delete-temp-dirs (skipped for debug)
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+INFO-FLOW: DBG:PUTS: read_platform_lib /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/global.setting.tcl
+Execute     source /tools/Xilinx/Vitis_HLS/2023.2/common/technology/generic/autopilot/common.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2023.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /tools/Xilinx/Vitis_HLS/2023.2/common/technology/generic/autopilot/op.gen 
+Execute     source /tools/Xilinx/Vitis_HLS/2023.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /tools/Xilinx/Vitis_HLS/2023.2/common/technology/generic/autopilot/interface.gen 
+Execute     source /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/.autopilot/db/global.setting.tcl 
+Execute     ap_family_info -name versalprimees1 -data parts 
+Execute     source /tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:     IP package: exec /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/impl/ip/pack.sh
+INFO-FLOW: DBG:PUTS:     IP package: success /home/fran/Documentos/progra/sys_fir/lab/fir_2/fir_hls/hls/impl/ip/pack.sh
+Execute     send_msg_by_id INFO @200-802@%s fir_hls/fir_hls.xo 
+INFO: [HLS 200-802] Generated output file fir_hls/fir_hls.xo
+Command   export_design done; 10.85 sec.
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 8.15 seconds. CPU system time: 0.45 seconds. Elapsed time: 10.85 seconds; current allocated memory: 7.910 MB.
+Execute   close_project 
+INFO: [HLS 200-1510] Running: close_project 
+Execute     close_solution 
+Execute       cleanup_all 
+Execute       cleanup_all 

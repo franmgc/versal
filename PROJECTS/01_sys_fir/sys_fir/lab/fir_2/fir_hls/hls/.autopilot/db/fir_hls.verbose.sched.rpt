@@ -1,0 +1,169 @@
+
+
+================================================================
+== Vitis HLS Report for 'fir_hls'
+================================================================
+* Date:           Mon Mar  3 19:17:16 2025
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        fir_hls
+* Solution:       hls (Vitis Kernel Flow Target)
+* Product family: versalaicore
+* Target device:  xcvc1902-vsva2197-2MP-e-S
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  8.00 ns|  4.742 ns|     0.96 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       80|       80|  0.640 us|  0.640 us|   81|   81|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 5
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%shift_reg_loc = alloca i64 1"   --->   Operation 6 'alloca' 'shift_reg_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%shift_reg_1_loc = alloca i64 1"   --->   Operation 7 'alloca' 'shift_reg_1_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%shift_reg_2_loc = alloca i64 1"   --->   Operation 8 'alloca' 'shift_reg_2_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%shift_reg_3_loc = alloca i64 1"   --->   Operation 9 'alloca' 'shift_reg_3_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%shift_reg_4_loc = alloca i64 1"   --->   Operation 10 'alloca' 'shift_reg_4_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%shift_reg_5_loc = alloca i64 1"   --->   Operation 11 'alloca' 'shift_reg_5_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%shift_reg_6_loc = alloca i64 1"   --->   Operation 12 'alloca' 'shift_reg_6_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fir_hls_Pipeline_1, i29 %shift_reg_6_loc, i29 %shift_reg_5_loc, i29 %shift_reg_4_loc, i29 %shift_reg_3_loc, i29 %shift_reg_2_loc, i29 %shift_reg_1_loc, i29 %shift_reg_loc"   --->   Operation 13 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%empty = wait i32 @_ssdm_op_Wait"   --->   Operation 14 'wait' 'empty' <Predicate = true> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 0.92>
+ST_2 : Operation 15 [1/2] (0.92ns)   --->   "%call_ln0 = call void @fir_hls_Pipeline_1, i29 %shift_reg_6_loc, i29 %shift_reg_5_loc, i29 %shift_reg_4_loc, i29 %shift_reg_3_loc, i29 %shift_reg_2_loc, i29 %shift_reg_1_loc, i29 %shift_reg_loc"   --->   Operation 15 'call' 'call_ln0' <Predicate = true> <Delay = 0.92> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 4.02>
+ST_3 : Operation 16 [1/1] (0.00ns)   --->   "%MuxLogicAddr_to_shift_reg_6_loc_load = muxlogic i29 %shift_reg_6_loc"   --->   Operation 16 'muxlogic' 'MuxLogicAddr_to_shift_reg_6_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 17 [1/1] (0.00ns)   --->   "%shift_reg_6_loc_load = load i29 %shift_reg_6_loc"   --->   Operation 17 'load' 'shift_reg_6_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 18 [1/1] (0.00ns)   --->   "%MuxLogicAddr_to_shift_reg_5_loc_load = muxlogic i29 %shift_reg_5_loc"   --->   Operation 18 'muxlogic' 'MuxLogicAddr_to_shift_reg_5_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 19 [1/1] (0.00ns)   --->   "%shift_reg_5_loc_load = load i29 %shift_reg_5_loc"   --->   Operation 19 'load' 'shift_reg_5_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 20 [1/1] (0.00ns)   --->   "%MuxLogicAddr_to_shift_reg_4_loc_load = muxlogic i29 %shift_reg_4_loc"   --->   Operation 20 'muxlogic' 'MuxLogicAddr_to_shift_reg_4_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 21 [1/1] (0.00ns)   --->   "%shift_reg_4_loc_load = load i29 %shift_reg_4_loc"   --->   Operation 21 'load' 'shift_reg_4_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 22 [1/1] (0.00ns)   --->   "%MuxLogicAddr_to_shift_reg_3_loc_load = muxlogic i29 %shift_reg_3_loc"   --->   Operation 22 'muxlogic' 'MuxLogicAddr_to_shift_reg_3_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 23 [1/1] (0.00ns)   --->   "%shift_reg_3_loc_load = load i29 %shift_reg_3_loc"   --->   Operation 23 'load' 'shift_reg_3_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 24 [1/1] (0.00ns)   --->   "%MuxLogicAddr_to_shift_reg_2_loc_load = muxlogic i29 %shift_reg_2_loc"   --->   Operation 24 'muxlogic' 'MuxLogicAddr_to_shift_reg_2_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 25 [1/1] (0.00ns)   --->   "%shift_reg_2_loc_load = load i29 %shift_reg_2_loc"   --->   Operation 25 'load' 'shift_reg_2_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 26 [1/1] (0.00ns)   --->   "%MuxLogicAddr_to_shift_reg_1_loc_load = muxlogic i29 %shift_reg_1_loc"   --->   Operation 26 'muxlogic' 'MuxLogicAddr_to_shift_reg_1_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 27 [1/1] (0.00ns)   --->   "%shift_reg_1_loc_load = load i29 %shift_reg_1_loc"   --->   Operation 27 'load' 'shift_reg_1_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 28 [1/1] (0.00ns)   --->   "%MuxLogicAddr_to_shift_reg_loc_load = muxlogic i29 %shift_reg_loc"   --->   Operation 28 'muxlogic' 'MuxLogicAddr_to_shift_reg_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 29 [1/1] (0.00ns)   --->   "%shift_reg_loc_load = load i29 %shift_reg_loc"   --->   Operation 29 'load' 'shift_reg_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 30 [2/2] (4.02ns)   --->   "%call_ln0 = call void @fir_hls_Pipeline_VITIS_LOOP_12_1, i29 %shift_reg_6_loc_load, i29 %shift_reg_5_loc_load, i29 %shift_reg_4_loc_load, i29 %shift_reg_3_loc_load, i29 %shift_reg_2_loc_load, i29 %shift_reg_1_loc_load, i29 %shift_reg_loc_load, i32 %in_stream, i32 %out_stream"   --->   Operation 30 'call' 'call_ln0' <Predicate = true> <Delay = 4.02> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 31 [1/2] (0.00ns)   --->   "%call_ln0 = call void @fir_hls_Pipeline_VITIS_LOOP_12_1, i29 %shift_reg_6_loc_load, i29 %shift_reg_5_loc_load, i29 %shift_reg_4_loc_load, i29 %shift_reg_3_loc_load, i29 %shift_reg_2_loc_load, i29 %shift_reg_1_loc_load, i29 %shift_reg_loc_load, i32 %in_stream, i32 %out_stream"   --->   Operation 31 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 5 <SV = 4> <Delay = 0.00>
+ST_5 : Operation 32 [1/1] (0.00ns)   --->   "%spectopmodule_ln6 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_4" [/home/fran/Documentos/progra/sys_fir/fuentes/HLS/fir_2.cpp:6]   --->   Operation 32 'spectopmodule' 'spectopmodule_ln6' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 33 [1/1] (0.00ns)   --->   "%specinterface_ln6 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_5, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0" [/home/fran/Documentos/progra/sys_fir/fuentes/HLS/fir_2.cpp:6]   --->   Operation 33 'specinterface' 'specinterface_ln6' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 34 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %in_stream, void @empty, i32 1, i32 1, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0"   --->   Operation 34 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 35 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %in_stream"   --->   Operation 35 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 36 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %out_stream, void @empty, i32 1, i32 1, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0"   --->   Operation 36 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 37 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %out_stream"   --->   Operation 37 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 38 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_2, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_3, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0"   --->   Operation 38 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 39 [1/1] (0.00ns)   --->   "%ret_ln28 = ret" [/home/fran/Documentos/progra/sys_fir/fuentes/HLS/fir_2.cpp:28]   --->   Operation 39 'ret' 'ret_ln28' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 8.000ns, clock uncertainty: 0.960ns.
+
+ <State 1>: 0.000ns
+The critical path consists of the following:
+
+ <State 2>: 0.924ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln0') to 'fir_hls_Pipeline_1' [17]  (0.924 ns)
+
+ <State 3>: 4.023ns
+The critical path consists of the following:
+	'muxlogic' operation 29 bit ('MuxLogicAddr_to_shift_reg_6_loc_load') [18]  (0.000 ns)
+	'load' operation 29 bit ('shift_reg_6_loc_load') on local variable 'shift_reg_6_loc' [19]  (0.000 ns)
+	'call' operation 0 bit ('call_ln0') to 'fir_hls_Pipeline_VITIS_LOOP_12_1' [33]  (4.023 ns)
+
+ <State 4>: 0.000ns
+The critical path consists of the following:
+
+ <State 5>: 0.000ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

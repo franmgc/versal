@@ -1,0 +1,15 @@
+{
+  "name": "fir_2",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": [
+      "fir_2.cfg"
+    ],
+    "work_dir": "fir_hls"
+  },
+  "previousBuildStatusMap": {
+    "sw_emu": "SUCCESS",
+    "hw_emu": "SUCCESS"
+  }
+}

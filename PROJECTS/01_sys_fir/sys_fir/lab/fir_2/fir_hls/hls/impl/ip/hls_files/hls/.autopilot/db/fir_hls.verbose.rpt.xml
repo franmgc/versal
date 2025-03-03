@@ -1,0 +1,150 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'fir_hls'" level="0">
+<item name = "Date">Mon Mar  3 19:17:16 2025
+</item>
+<item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
+<item name = "Project">fir_hls</item>
+<item name = "Solution">hls (Vitis Kernel Flow Target)</item>
+<item name = "Product family">versalaicore</item>
+<item name = "Target device">xcvc1902-vsva2197-2MP-e-S</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">8.00 ns, 4.742 ns, 0.96 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">80, 80, 0.640 us, 0.640 us, 81, 81, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_fir_hls_Pipeline_1_fu_66">fir_hls_Pipeline_1, 10, 10, 80.000 ns, 80.000 ns, 10, 10, no</column>
+<column name="grp_fir_hls_Pipeline_VITIS_LOOP_12_1_fu_77">fir_hls_Pipeline_VITIS_LOOP_12_1, 66, 66, 0.528 us, 0.528 us, 66, 66, no</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 4, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">0, -, 285, 652, 0</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, -, 10, -</column>
+<column name="Register">-, -, 214, -, -</column>
+<specialColumn name="Available">1934, 1968, 1799680, 899840, 463</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, ~0, ~0, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="control_s_axi_U">control_s_axi, 0, 0, 36, 40, 0</column>
+<column name="grp_fir_hls_Pipeline_1_fu_66">fir_hls_Pipeline_1, 0, 0, 6, 20, 0</column>
+<column name="grp_fir_hls_Pipeline_VITIS_LOOP_12_1_fu_77">fir_hls_Pipeline_VITIS_LOOP_12_1, 0, 0, 243, 592, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="grp_fir_hls_Pipeline_VITIS_LOOP_12_1_fu_77_out_stream_TREADY">and, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state1">or, 0, 0, 2, 1, 1</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">6, 6, 1, 6</column>
+<column name="ap_done">2, 2, 1, 2</column>
+<column name="in_stream_TREADY_int_regslice">2, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">5, 0, 5, 0</column>
+<column name="ap_done_reg">1, 0, 1, 0</column>
+<column name="ap_rst_n_inv">1, 0, 1, 0</column>
+<column name="ap_rst_reg_1">1, 0, 1, 0</column>
+<column name="ap_rst_reg_2">1, 0, 1, 0</column>
+<column name="grp_fir_hls_Pipeline_1_fu_66_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fir_hls_Pipeline_VITIS_LOOP_12_1_fu_77_ap_start_reg">1, 0, 1, 0</column>
+<column name="shift_reg_1_loc_fu_42">29, 0, 29, 0</column>
+<column name="shift_reg_2_loc_fu_46">29, 0, 29, 0</column>
+<column name="shift_reg_3_loc_fu_50">29, 0, 29, 0</column>
+<column name="shift_reg_4_loc_fu_54">29, 0, 29, 0</column>
+<column name="shift_reg_5_loc_fu_58">29, 0, 29, 0</column>
+<column name="shift_reg_6_loc_fu_62">29, 0, 29, 0</column>
+<column name="shift_reg_loc_fu_38">29, 0, 29, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="s_axi_control_AWVALID">in, 1, s_axi, control, return void</column>
+<column name="s_axi_control_AWREADY">out, 1, s_axi, control, return void</column>
+<column name="s_axi_control_AWADDR">in, 4, s_axi, control, return void</column>
+<column name="s_axi_control_WVALID">in, 1, s_axi, control, return void</column>
+<column name="s_axi_control_WREADY">out, 1, s_axi, control, return void</column>
+<column name="s_axi_control_WDATA">in, 32, s_axi, control, return void</column>
+<column name="s_axi_control_WSTRB">in, 4, s_axi, control, return void</column>
+<column name="s_axi_control_ARVALID">in, 1, s_axi, control, return void</column>
+<column name="s_axi_control_ARREADY">out, 1, s_axi, control, return void</column>
+<column name="s_axi_control_ARADDR">in, 4, s_axi, control, return void</column>
+<column name="s_axi_control_RVALID">out, 1, s_axi, control, return void</column>
+<column name="s_axi_control_RREADY">in, 1, s_axi, control, return void</column>
+<column name="s_axi_control_RDATA">out, 32, s_axi, control, return void</column>
+<column name="s_axi_control_RRESP">out, 2, s_axi, control, return void</column>
+<column name="s_axi_control_BVALID">out, 1, s_axi, control, return void</column>
+<column name="s_axi_control_BREADY">in, 1, s_axi, control, return void</column>
+<column name="s_axi_control_BRESP">out, 2, s_axi, control, return void</column>
+<column name="ap_clk">in, 1, ap_ctrl_chain, fir_hls, return value</column>
+<column name="ap_rst_n">in, 1, ap_ctrl_chain, fir_hls, return value</column>
+<column name="interrupt">out, 1, ap_ctrl_chain, fir_hls, return value</column>
+<column name="in_stream_TDATA">in, 32, axis, in_stream, pointer</column>
+<column name="in_stream_TVALID">in, 1, axis, in_stream, pointer</column>
+<column name="in_stream_TREADY">out, 1, axis, in_stream, pointer</column>
+<column name="out_stream_TDATA">out, 32, axis, out_stream, pointer</column>
+<column name="out_stream_TVALID">out, 1, axis, out_stream, pointer</column>
+<column name="out_stream_TREADY">in, 1, axis, out_stream, pointer</column>
+</table>
+</item>
+</section>
+</profile>

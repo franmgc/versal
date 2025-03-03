@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Mon Mar  3 19:18:03 2025
+# Process ID: 121634
+# Current directory: /home/fran/Documentos/progra/sys_fir/lab/mm2s/mm2s/hls/impl/ip
+# Command line: vivado -notrace -mode batch -source run_ippack.tcl
+# Log file: /home/fran/Documentos/progra/sys_fir/lab/mm2s/mm2s/hls/impl/ip/vivado.log
+# Journal file: /home/fran/Documentos/progra/sys_fir/lab/mm2s/mm2s/hls/impl/ip/vivado.jou
+# Running On: asus, OS: Linux, CPU Frequency: 629.172 MHz, CPU Physical cores: 10, Host memory: 16440 MB
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace
+ipx::create_core: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1386.445 ; gain = 38.836 ; free physical = 3340 ; free virtual = 11754
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2023.2/data/ip'.
+Running package_xo -xo_path /home/fran/Documentos/progra/sys_fir/lab/mm2s/mm2s/mm2s.xo -kernel_name mm2s -kernel_xml /home/fran/Documentos/progra/sys_fir/lab/mm2s/mm2s/hls/impl/ip/../kernel/kernel.xml -kernel_files /home/fran/Documentos/progra/sys_fir/fuentes/HLS/mm2s.cpp -ip_directory /home/fran/Documentos/progra/sys_fir/lab/mm2s/mm2s/hls/impl/ip/ip_unzip_dir -design_xml /home/fran/Documentos/progra/sys_fir/lab/mm2s/mm2s/hls/.autopilot/db/mm2s.design.xml -debug_directory /home/fran/Documentos/progra/sys_fir/lab/mm2s/mm2s/hls/.debug -hls_directory /home/fran/Documentos/progra/sys_fir/lab/mm2s/mm2s/hls/impl/ip/hls_files -kernel_json /home/fran/Documentos/progra/sys_fir/lab/mm2s/mm2s/hls/hls_data.json
+INFO: [Common 17-206] Exiting Vivado at Mon Mar  3 19:18:12 2025...

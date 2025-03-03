@@ -1,0 +1,27 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="directive:1:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="fir_hls" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=fir_hls" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="/home/fran/Documentos/progra/sys_fir/fuentes/HLS/fir_2.cpp:15:26" msg_body="Loop 'VITIS_LOOP_15_2' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_15_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="/home/fran/Documentos/progra/sys_fir/fuentes/HLS/fir_2.cpp:22:26" msg_body="Loop 'VITIS_LOOP_22_3' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_22_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="/home/fran/Documentos/progra/sys_fir/fuentes/HLS/fir_2.cpp:7:0" msg_body="Unrolling loop 'VITIS_LOOP_15_2' (/home/fran/Documentos/progra/sys_fir/fuentes/HLS/fir_2.cpp:15:26) in function 'fir_hls' completely with a factor of 7">
+        <args Factor="7" LoopLoc="/home/fran/Documentos/progra/sys_fir/fuentes/HLS/fir_2.cpp:15:26" LoopName="VITIS_LOOP_15_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="/home/fran/Documentos/progra/sys_fir/fuentes/HLS/fir_2.cpp:7:0" msg_body="Unrolling loop 'VITIS_LOOP_22_3' (/home/fran/Documentos/progra/sys_fir/fuentes/HLS/fir_2.cpp:22:26) in function 'fir_hls' completely with a factor of 8">
+        <args Factor="8" LoopLoc="/home/fran/Documentos/progra/sys_fir/fuentes/HLS/fir_2.cpp:22:26" LoopName="VITIS_LOOP_22_3"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="/home/fran/Documentos/progra/sys_fir/fuentes/HLS/fir_2.cpp:10:13" msg_body="array_partition dim=1 type=complete  variable=shift_reg 1 fir_hls /home/fran/Documentos/progra/sys_fir/fuentes/HLS/fir_2.cpp:10:13 shift_reg">
+        <args PragmaFunction="fir_hls" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=shift_reg" PragmaType="array_partition" VarName="shift_reg" varLoc="/home/fran/Documentos/progra/sys_fir/fuentes/HLS/fir_2.cpp:10:13"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="/home/fran/Documentos/progra/sys_fir/fuentes/HLS/fir_2.cpp:10:13" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'shift_reg' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="shift_reg" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="/home/fran/Documentos/progra/sys_fir/fuentes/HLS/fir_2.cpp:10:13" msg_body="Applying array_partition to 'shift_reg': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="shift_reg"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

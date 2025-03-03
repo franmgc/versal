@@ -1,0 +1,7 @@
+[
+  {
+    "directory": "/home/fran/Documentos/progra/sys_fir/lab/fir_sw/_ide/_build",
+    "command": "/usr/bin/g++ -DVITIS_MAJOR_VERSION\u003d2023 -DVITIS_MINOR_VERSION\u003d2 -DVITIS_VERSION\u003d2023.2 -D__USE_XOPEN2K8 -I/tools/Xilinx/Vitis_HLS/2023.2/include -I/opt/xilinx/xrt/include -I/tools/Xilinx/Vitis/2023.2/aietools/include -g -Wall -Wextra -O0 -g3 -std\u003dc++14 -o CMakeFiles/fir_sw.dir/host.cpp.o -c /home/fran/Documentos/progra/sys_fir/lab/fir_sw/host.cpp",
+    "file": "/home/fran/Documentos/progra/sys_fir/lab/fir_sw/host.cpp"
+  }
+]

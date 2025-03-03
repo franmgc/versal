@@ -1,0 +1,176 @@
+
+
+================================================================
+== Vitis HLS Report for 'fir_hls_Pipeline_VITIS_LOOP_12_1'
+================================================================
+* Date:           Mon Mar  3 19:17:16 2025
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        fir_hls
+* Solution:       hls (Vitis Kernel Flow Target)
+* Product family: versalaicore
+* Target device:  xcvc1902-vsva2197-2MP-e-S
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  8.00 ns|  4.742 ns|     0.96 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       66|       66|  0.528 us|  0.528 us|   66|   66|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                   |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |     Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_12_1  |       64|       64|         2|          1|          1|    64|       yes|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+------+---------+--------+-----+
+|       Name      | BRAM_18K|  DSP |    FF   |   LUT  | URAM|
++-----------------+---------+------+---------+--------+-----+
+|DSP              |        -|     -|        -|       -|    -|
+|Expression       |        -|     -|        0|     379|    -|
+|FIFO             |        -|     -|        -|       -|    -|
+|Instance         |        -|     -|        -|       -|    -|
+|Memory           |        -|     -|        -|       -|    -|
+|Multiplexer      |        -|     -|        -|     213|    -|
+|Register         |        -|     -|      243|       -|    -|
++-----------------+---------+------+---------+--------+-----+
+|Total            |        0|     0|      243|     592|    0|
++-----------------+---------+------+---------+--------+-----+
+|Available        |     1934|  1968|  1799680|  899840|  463|
++-----------------+---------+------+---------+--------+-----+
+|Utilization (%)  |        0|     0|       ~0|      ~0|    0|
++-----------------+---------+------+---------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |           Variable Name          | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |acc_fu_467_p2                     |         +|   0|  0|  65|          32|          32|
+    |add_ln23_1_fu_437_p2              |         +|   0|  0|  32|          32|          32|
+    |add_ln23_2_fu_443_p2              |         +|   0|  0|  65|          32|          32|
+    |add_ln23_3_fu_449_p2              |         +|   0|  0|  65|          32|          32|
+    |add_ln23_4_fu_455_p2              |         +|   0|  0|  32|          32|          32|
+    |add_ln23_5_fu_461_p2              |         +|   0|  0|  65|          32|          32|
+    |add_ln23_fu_431_p2                |         +|   0|  0|  32|          32|          32|
+    |i_2_fu_303_p2                     |         +|   0|  0|   7|           7|           1|
+    |ap_block_state2_pp0_stage0_iter1  |       and|   0|  0|   2|           1|           1|
+    |icmp_ln12_fu_309_p2               |      icmp|   0|  0|   8|           7|           8|
+    |ap_block_pp0_stage0_01001         |        or|   0|  0|   2|           1|           1|
+    |ap_block_pp0_stage0_11001         |        or|   0|  0|   2|           1|           1|
+    |ap_enable_pp0                     |       xor|   0|  0|   2|           1|           2|
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |Total                             |          |   0|  0| 379|         242|         238|
+    +----------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------+----+-----------+-----+-----------+
+    |           Name          | LUT| Input Size| Bits| Total Bits|
+    +-------------------------+----+-----------+-----+-----------+
+    |ap_done_int              |   2|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1  |   2|          2|    1|          2|
+    |ap_enable_reg_pp0_iter2  |   2|          2|    1|          2|
+    |i_fu_82                  |   7|          2|    7|         14|
+    |in_stream_TDATA_blk_n    |   2|          2|    1|          2|
+    |out_stream_TDATA_blk_n   |   2|          2|    1|          2|
+    |shift_reg_14_in_fu_86    |  28|          2|   29|         58|
+    |shift_reg_15_in_fu_102   |  28|          2|   29|         58|
+    |shift_reg_16_in_fu_90    |  28|          2|   29|         58|
+    |shift_reg_17_in_fu_106   |  28|          2|   29|         58|
+    |shift_reg_18_in_fu_94    |  28|          2|   29|         58|
+    |shift_reg_19_in_fu_110   |  28|          2|   29|         58|
+    |shift_reg_fu_98          |  28|          2|   29|         58|
+    +-------------------------+----+-----------+-----+-----------+
+    |Total                    | 213|         26|  215|        430|
+    +-------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------+----+----+-----+-----------+
+    |           Name          | FF | LUT| Bits| Const Bits|
+    +-------------------------+----+----+-----+-----------+
+    |acc_reg_655              |  29|   0|   32|          3|
+    |ap_CS_fsm                |   1|   0|    1|          0|
+    |ap_done_reg              |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter2  |   1|   0|    1|          0|
+    |i_fu_82                  |   7|   0|    7|          0|
+    |shift_reg_14_in_fu_86    |  29|   0|   29|          0|
+    |shift_reg_15_in_fu_102   |  29|   0|   29|          0|
+    |shift_reg_16_in_fu_90    |  29|   0|   29|          0|
+    |shift_reg_17_in_fu_106   |  29|   0|   29|          0|
+    |shift_reg_18_in_fu_94    |  29|   0|   29|          0|
+    |shift_reg_19_in_fu_110   |  29|   0|   29|          0|
+    |shift_reg_fu_98          |  29|   0|   29|          0|
+    +-------------------------+----+----+-----+-----------+
+    |Total                    | 243|   0|  246|          3|
+    +-------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------------+-----+-----+------------+----------------------------------+--------------+
+|      RTL Ports     | Dir | Bits|  Protocol  |           Source Object          |    C Type    |
++--------------------+-----+-----+------------+----------------------------------+--------------+
+|ap_clk              |   in|    1|  ap_ctrl_hs|  fir_hls_Pipeline_VITIS_LOOP_12_1|  return value|
+|ap_rst              |   in|    1|  ap_ctrl_hs|  fir_hls_Pipeline_VITIS_LOOP_12_1|  return value|
+|ap_start            |   in|    1|  ap_ctrl_hs|  fir_hls_Pipeline_VITIS_LOOP_12_1|  return value|
+|ap_done             |  out|    1|  ap_ctrl_hs|  fir_hls_Pipeline_VITIS_LOOP_12_1|  return value|
+|ap_idle             |  out|    1|  ap_ctrl_hs|  fir_hls_Pipeline_VITIS_LOOP_12_1|  return value|
+|ap_ready            |  out|    1|  ap_ctrl_hs|  fir_hls_Pipeline_VITIS_LOOP_12_1|  return value|
+|in_stream_TVALID    |   in|    1|        axis|                         in_stream|       pointer|
+|in_stream_TDATA     |   in|   32|        axis|                         in_stream|       pointer|
+|in_stream_TREADY    |  out|    1|        axis|                         in_stream|       pointer|
+|out_stream_TREADY   |   in|    1|        axis|                        out_stream|       pointer|
+|out_stream_TDATA    |  out|   32|        axis|                        out_stream|       pointer|
+|out_stream_TVALID   |  out|    1|        axis|                        out_stream|       pointer|
+|shift_reg_6_reload  |   in|   29|     ap_none|                shift_reg_6_reload|        scalar|
+|shift_reg_5_reload  |   in|   29|     ap_none|                shift_reg_5_reload|        scalar|
+|shift_reg_4_reload  |   in|   29|     ap_none|                shift_reg_4_reload|        scalar|
+|shift_reg_3_reload  |   in|   29|     ap_none|                shift_reg_3_reload|        scalar|
+|shift_reg_2_reload  |   in|   29|     ap_none|                shift_reg_2_reload|        scalar|
+|shift_reg_1_reload  |   in|   29|     ap_none|                shift_reg_1_reload|        scalar|
+|shift_reg_reload    |   in|   29|     ap_none|                  shift_reg_reload|        scalar|
++--------------------+-----+-----+------------+----------------------------------+--------------+
+

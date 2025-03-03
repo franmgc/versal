@@ -1,0 +1,15 @@
+<root versionMajor = "1" versionMinor = "5">
+  <kernel name="fir_hls" language="c" vlnv="xilinx.com:hls:fir_hls:1.0" attributes="" hash="" preferredWorkGroupSizeMultiple="0" workGroupSize="1" debug="false" compileOptions="" profileType="none" hwControlProtocol="ap_ctrl_chain">
+    <ports>
+      <port name="IN_STREAM" mode="read_only" dataWidth="32" portType="stream"/>
+      <port name="OUT_STREAM" mode="write_only" dataWidth="32" portType="stream"/>
+      <port name="S_AXI_CONTROL" portType="addressable" mode="slave" base="0x0" range="0x10" dataWidth="32"/>
+    </ports>
+    <args>
+      <arg id="0" name="in_stream" addressQualifier="4" port="IN_STREAM" hostOffset="0x0" hostSize="0x8" offset="0x0" size="0x0" type="stream&lt;int, 0&gt;&amp;" origName="in_stream" origUse="variable"/>
+      <arg id="1" name="out_stream" addressQualifier="4" port="OUT_STREAM" hostOffset="0x0" hostSize="0x8" offset="0x0" size="0x0" type="stream&lt;int, 0&gt;&amp;" origName="out_stream" origUse="variable"/>
+    </args>
+    <compileWorkGroupSize x="1" y="1" z="1"/>
+    <maxWorkGroupSize x="1" y="1" z="1"/>
+  </kernel>
+</root>

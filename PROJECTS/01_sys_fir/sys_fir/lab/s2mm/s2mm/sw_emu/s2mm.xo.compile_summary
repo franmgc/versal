@@ -1,0 +1,168 @@
+<ENTRY>
+{
+ "thisFile": "/home/fran/Documentos/progra/sys_fir/lab/s2mm/s2mm/sw_emu/s2mm.xo.compile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Mon Mar  3 19:05:47 2025",
+ "timestampMillis": "1741025147213",
+ "buildStep": {
+  "cmdId": "3b86529f-7adb-4289-9438-ef8f610202d5",
+  "name": "v++",
+  "logFile": "/home/fran/Documentos/progra/sys_fir/lab/s2mm/s2mm/sw_emu/s2mm/s2mm.steps.log",
+  "commandLine": "/tools/Xilinx/Vitis/2023.2/bin/unwrapped/lnx64.o/v++  --vivado.prop \"run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" -c -k s2mm --target sw_emu -g /home/fran/Documentos/progra/sys_fir/fuentes/HLS/s2mm.cpp --platform /tools/Xilinx/Vitis/2023.2/base_platforms/xilinx_vck190_base_202320_1/xilinx_vck190_base_202320_1.xpfm --temp_dir /home/fran/Documentos/progra/sys_fir/lab/s2mm/s2mm/sw_emu -o /home/fran/Documentos/progra/sys_fir/lab/s2mm/s2mm/sw_emu/s2mm.xo ",
+  "args": [
+   "-c",
+   "-k",
+   "s2mm",
+   "--target",
+   "sw_emu",
+   "-g",
+   "/home/fran/Documentos/progra/sys_fir/fuentes/HLS/s2mm.cpp",
+   "--platform",
+   "/tools/Xilinx/Vitis/2023.2/base_platforms/xilinx_vck190_base_202320_1/xilinx_vck190_base_202320_1.xpfm",
+   "--temp_dir",
+   "/home/fran/Documentos/progra/sys_fir/lab/s2mm/s2mm/sw_emu",
+   "-o",
+   "/home/fran/Documentos/progra/sys_fir/lab/s2mm/s2mm/sw_emu/s2mm.xo"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/fran/Documentos/progra/sys_fir/lab/s2mm"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Mar  3 19:05:47 2025",
+ "timestampMillis": "1741025147213",
+ "status": {
+  "cmdId": "3b86529f-7adb-4289-9438-ef8f610202d5",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Mon Mar  3 19:05:48 2025",
+ "timestampMillis": "1741025148268",
+ "buildSummary": {
+  "hardwarePlatform": "xilinx_vck190_base_202320_1.xpfm",
+  "hardwareDsa": "hw.xsa",
+  "platformDirectory": "/tools/Xilinx/Vitis/2023.2/base_platforms/xilinx_vck190_base_202320_1",
+  "runtime": "OpenCL",
+  "systemConfig": "Linux",
+  "flow": "BF_COMPILE",
+  "target": "TT_SW_EMU",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "s2mm",
+     "file": "/home/fran/Documentos/progra/sys_fir/lab/s2mm/s2mm/sw_emu/s2mm.xo",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/fran/Documentos/progra/sys_fir/fuentes/HLS/s2mm.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "Vitis V++ Compiler Release 2023.2. SW Build 4026344 on 2023-10-11-15:42:10"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Mar  3 19:05:48 2025",
+ "timestampMillis": "1741025148270",
+ "buildStep": {
+  "cmdId": "24f8a8b2-bc59-4598-b4d9-4a10993eb73f",
+  "name": "vitis_hls",
+  "logFile": "/home/fran/Documentos/progra/sys_fir/lab/s2mm/s2mm/sw_emu/s2mm/s2mm/vitis_hls.log",
+  "commandLine": "vitis_hls -f /home/fran/Documentos/progra/sys_fir/lab/s2mm/s2mm/sw_emu/s2mm/s2mm/s2mm.tcl -messageDb vitis_hls.pb",
+  "args": [
+   "vitis_hls",
+   "-f",
+   "/home/fran/Documentos/progra/sys_fir/lab/s2mm/s2mm/sw_emu/s2mm/s2mm/s2mm.tcl",
+   "-messageDb",
+   "vitis_hls.pb"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/fran/Documentos/progra/sys_fir/lab/s2mm"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Mar  3 19:05:48 2025",
+ "timestampMillis": "1741025148270",
+ "status": {
+  "cmdId": "24f8a8b2-bc59-4598-b4d9-4a10993eb73f",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Mar  3 19:05:59 2025",
+ "timestampMillis": "1741025159423",
+ "status": {
+  "cmdId": "24f8a8b2-bc59-4598-b4d9-4a10993eb73f",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Mar  3 19:05:59 2025",
+ "timestampMillis": "1741025159441",
+ "status": {
+  "cmdId": "3b86529f-7adb-4289-9438-ef8f610202d5",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar  3 19:05:59 2025",
+ "timestampMillis": "1741025159511",
+ "report": {
+  "path": "/home/fran/Documentos/progra/sys_fir/lab/s2mm/s2mm/sw_emu/reports/s2mm/v++_compile_s2mm_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar  3 19:05:59 2025",
+ "timestampMillis": "1741025159512",
+ "report": {
+  "path": "/home/fran/Documentos/progra/sys_fir/lab/s2mm/s2mm/sw_emu/v++_compile_s2mm_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
